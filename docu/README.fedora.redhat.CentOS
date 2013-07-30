@@ -1,0 +1,54 @@
+
+GestioIP 3.0 IPAM
+IP address management software
+
+==============================
+Note for Fedora/RedHat/CentOS
+==============================
+
+SELinux's default settings impede to execute
+GestioIP correctly.
+
+
+Modify SELinux policy:
+
+
+* Download Type Enforcement file
+
+For Fedora/RedHead
+wget http://www.gestioip.net/docu/gestioip_fedora_redhat.te
+
+For CentOS
+wget http://www.gestioip.net/docu/gestioip_centos5.te
+
+
+* Run the following commands to modify SELinux policy permanently
+  to permit the execution of GestioIP
+
+Note that checkmodule is part of the checkpolicy rpm, so you
+need to have it installed. 
+
+
+For Fedora/RedHead
+
+$ checkmodule -M -m -o gestioip.mod gestioip_fedora_redhat.te 
+$ semodule_package -o gestioip.pp -m gestioip.mod 
+$ sudo semodule -i gestioip.pp
+
+For CentOS
+
+$ checkmodule -M -m -o gestioip.mod gestioip_centos5.te 
+$ semodule_package -o gestioip.pp -m gestioip.mod 
+$ sudo /usr/sbin/semodule -i gestioip.pp
+
+
+
+Set Permissions of GestioIP's cgi-dir:
+
+sudo chcon -R -t httpd_sys_script_exec_t /var/www/html/gestioip
+
+
+
+
+====================================================
+GestioIP Copyright (C) 2011 Marc Uebel <contact@gestioip.net>

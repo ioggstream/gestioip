@@ -1,0 +1,455 @@
+
+  div#AllBox { padding-left: 0.5em; padding-right: 0.5em; font-family: tahoma,arial,helvetica,sans-serif-serif;}
+
+  div#AllBox td { font-size: 0.8em; line-height: 1.5em; }
+
+  div#TopBox { background: url('/imagenes/style/bg_topbox.jpg') repeat; width:100%; height: 64px; padding-left: 5px; margin:0em; }
+
+
+
+div#TopBox ul { margin:0px; padding:0.1em; display:inline; font-size: 11px; font-weight: bold; color: #29396b; }
+
+div#TopBox ul li {display:inline; list-style:none; margin-left:5px; position:relative; height:30px; padding: 0.3em;}
+div#TopBox ul li:hover { color: white;}
+
+div#TopBox li ul { margin:0px; padding:0px; padding-top: 6px; display:none; position:absolute; left: 0px; text-align: left; top:16px; background-color:#C3CBDA; border-right-width:2px; border-right-style:solid; border-right-color: #A0A4A8; border-bottom-width:2px; border-bottom-style:solid; border-bottom-color: #A0A4A8; }
+
+div#TopBox li:hover ul {display:block; width:296px; }
+
+div#TopBox li li {list-style:none; display:list-item;}
+
+@div#TopBox select { background-color: #efefef; border-width: 1px; }
+  .TopSearchInput { padding:4px 3px 0px 3px; background-color: white; background: transparent url('/imagenes/style/search_field_bg.jpg'); border-bottom-width: 1px; border-right-width: 1px; border-left-width: 0px; border-top-width: 0px; }
+
+ .TopClientSelect { font-size: 16px; padding:3px 0px 2px 3px; color: #000000; background-color: white; border-bottom-width: 1px; border-right-width: 1px; border-left-width: 0px; border-top-width: 0px; }
+ select { padding: 0px; color: #000000; background-color: #fff; border-width: 1px; }
+
+
+
+   div#TopBoxCalc { background: url('/imagenes/style/bg_topbox_small.jpg') repeat; width:100%; height:50px; margin:0em; }
+
+  .TopImagen { margin:0; padding: 0.2em; padding-right: 1em; float: right; border: 0px; }
+
+  .TopText { font-size: 20px; margin: 0; padding: 0.1em; text-align: left; font-weight: bold; color: white; }
+
+
+  .TopTextSearchHead { line-height: 12px; font-size: 11px; margin: 0; text-align: left; font-weight: bold; color: white; }
+  .TopTextClientHead { font-size: 14px; margin: 0; padding: 0.1em; text-align: left; font-weight: bold; color: white; }
+
+  .TopTextCalc { font-size: 16px; margin: 0; padding: 0.1em; text-align: left; font-weight: bold; color: #ffffff; }
+
+  .TopTextGestio { font-size: 28px; text-align: left;  font-weight: bolder; color: #D1D8DD; }
+  .TopTextGestio a { font-size: 28px; margin: 0; padding: 0.1em; text-align: left; font-weight: bolder; text-decoration: none; color: #D1D8DD; }
+  .TopTextGestio a:hover { font-size: 28px; margin: 0; padding: 0.1em; text-align: left; font-weight: bolder; text-decoration: none; color: #D1D8DD; }
+  .TopTextGestio a:visited { font-size: 30px; margin: 0; padding: 0.1em; text-align: left; font-weight: bolder; text-decoration: none; color: #D1D8DD; }
+
+  .AboutTextGestio { font-size: 4.6em; margin: 0; padding: 0.1em; text-align: left; font-weight: bold; color: orange; }
+  .AboutTextGestioVersion { font-size: 1.1em; margin: 0; padding: 0.1em; padding-left: 0em; text-align: left; font-weight: bold; color: #000000; }
+  .AboutTextGestioIPAM { font-size: 1.0em; margin: 0; padding: 0.1em; padding-left: 0em; text-align: left; font-weight: bold; color: #000000; }
+  .AboutTextGestioCopyright { font-size: 1.1em; margin: 0; padding: 0.1em; padding-left: 1.0em; text-align: left; font-weight: bold; color: #000000; }
+
+  div#LeftMenuIntro { text-align: left; float: left; color: #ffffff; font-size: 0.8em; font-weight: bold; padding-top: 1.3em; padding-left: 0.5em; padding-right: 0.0em; padding-bottom: 1.5em; margin-right: 1.5em; width: 11em; background-color: #bbbdc4; }
+
+  div#LeftMenuIntro h3 { margin-top: 0.5em; margin-bottom: 0.5em; color: #FFFFFF; font-size: 1em; font-weight: bold; line-height: 1.0em; }
+
+  div#LeftMenuIntro hr { margin-bottom: 0.2em; }
+
+  div#LeftMenuIntro br { line-height: 1.0em; }
+
+  div#LeftMenuIntro form { margin-top: 0.2em; margin-bottom: 0.1em; }
+
+  div#LeftMenuIntro a:link { font-size: 0.9em; line-height: 1.5em; font-weight: normal; text-decoration: none; color: #29396b; }
+
+  div#LeftMenuIntro a:visited { font-size: 0.9em; line-height: 1.5em; font-weight: normal; text-decoration: none; color: #29396b; }
+
+  div#LeftMenuIntro a:hover { font-size: 0.9em; line-height: 1.5em; font-weight: normal; color: #de5308; }
+
+  .LeftMenuIntroText { font-size: 0.9em; line-height: 1.5em; font-weight: normal; color: #29396b; }
+
+  div#LeftMenuIntro select { background-color: #f2f2f2; color: #4b9719; font-weight: bold; border-width:1px; border-bottom-style:solid; border-bottom-color:#d0d0d0; border-right-style:solid; border-right-color:#d0d0d0; scrollbar-base-color:White; scrollbar-face-color:577C9E}
+
+  .LeftMenuListLink {  height: 100%; text-align: left; margin: 0; color: #29396b; background-color: #C3CBDA; font-size: 12px; font-weight: bold; border: 0px; cursor:pointer; }
+  .LeftMenuListLink:hover {  height: 100%; text-align: left; margin: 0; color: #de5308; background-color: #C3CBDA; font-size: 12px; font-weight: bold; border: 0px; cursor:pointer; }
+
+  .LeftMenuDetailLink { background: transparent; margin: 0; padding: 0; color: #29396b; font-size: 9px; font-weight: normal; border: 0px solid #006; cursor:pointer; }
+  .LeftMenuDetailLink:hover { color: #de5308; }
+
+   .LeftMenuListLinkBold { font-size: 14px; margin: 0; padding: 0; padding-top: 1px; color: #29396b; background-color: transparent; font-weight: bold; border: 0px solid #006; cursor:pointer; } 
+   .LeftMenuListLinkBold:hover { color: #de5308; } 
+
+
+  .calculate_link { font-size: 1.1em; line-height: 1.5em; font-weight: normal; text-decoration: none; color: #29396b; }
+
+  .calculate_link:hover { font-size: 0.9em; line-height: 1.5em; font-weight: normal; text-decoration: none; color: #de5308; }
+
+
+
+  div#Inhalt { font-size: 0.8em; top:71px; text-align: left; margin-left: 2em; margin-top: 0.5em; margin-right: 2.0em; min-height:35em; background-color: white; }
+
+  * html div#Inhalt { height: 1em; }
+
+  div#Inhalt a:link { font-size: 0.9em; font-weight: bold; color: #29396b; }
+
+  div#Inhalt a:visited { font-size: 0.9em; font-weight: bold; color: #29396b; }
+
+  div#Inhalt form { margin: 0em; padding: 0em;  font-size: 13px; }
+
+  div#Inhalt td { margin: 0em; padding: 1px; font-size: 12px; }
+
+
+  div#OCS_fetch { font-size: 0.8em; top:71px; text-align: left; margin-left: 2em; margin-top: 0.5em; margin-right: 2.0em; min-height:35em; background-color: white; }
+
+  div#OCS_fetch td { margin: 0px; padding: 3px; font-size: 11px; }
+
+  .ocs_table_head_text { font-weight: bold; text-decoration: none; }
+
+
+  div#CalcBox {}
+
+  div#CalcBox td { font-size: 0.8em; line-height: 1.0em; }
+
+
+  .NotifyText { font-size: 100%; font-weight: bold; color: #123456; } 
+
+  .HintText { font-size: 0.8em; font-style: italic; } 
+
+  .mostrar_link { font-weight: bold; color: #29396b; } 
+
+  .mostrar_link:hover { font-weight: bold; color: #E56717; } 
+
+  .detail_link { font-size: 0.8em; font-weight: normal; color: #29396b; } 
+
+  .detail_link:hover { font-size: 0.8em; font-weight: normal; color: #E56717; } 
+
+  .StatTitle { font-size: 1.5em; font-weight: bold; }
+
+  td.hostcheck { color: #29396b; cursor:pointer; }
+  td.hostcheck:hover { color: #E56717; cursor:pointer; }
+
+  td.hostcheck_ok { background: url('/imagenes/ping_green.png') no-repeat center; cursor:pointer; }
+  td.hostcheck_ok:hover { background: url('/imagenes/ping_green_hover.png') no-repeat center; cursor:pointer; }
+
+  td.hostcheck_failed { background: url('/imagenes/ping_red.png') no-repeat center; cursor:pointer; }
+  td.hostcheck_failed:hover { background: url('/imagenes/ping_red_hover.png') no-repeat center; cursor:pointer; }
+
+  td.hostcheck_never_checked { background: url('/imagenes/ping_gray.png') no-repeat center; cursor:pointer; }
+  td.hostcheck_never_checked:hover { background: url('/imagenes/ping_gray_hover.png') no-repeat center; cursor:pointer; }
+
+  td.hostcheck_unused { background: url('/imagenes/ping_gray_list_view_small.png') no-repeat center; cursor:pointer; text-decoration: blink;}
+  td.hostcheck_unused:hover { background: url('/imagenes/ping_gray_list_view_small_hover.png') no-repeat center; cursor:pointer; }
+
+  .red_search_radio { text-decoration: blink; } 
+
+  span.close_window { color: gray; }
+
+  span.close_window:hover { color: black; }
+
+  .input { border: 1px solid #006; cursor:pointer; }
+  .input:hover { color: #E56717; border: 1px solid #006; cursor:pointer; }
+
+  .input_link_f2 { background-color: #f2f2f2; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_f2:hover { background-color: #f2f2f2; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .input_link_w { background-color: white; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_w:hover { background-color: white; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .input_link_w_right { float: right; font-size: 0.9em; background-color: white; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_w_right:hover { float: right; font-size: 0.9em; text-align: right; background-color: white; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .input_link_lang { font-size: 0.6em; background-color: white; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_lang:hover { font-size: 0.6em; background-color: white; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .input_link_w_net { background-color: white; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_w_net:hover { background-color: white; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .input_url { background-color: transparent; background: transparent; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; text-decoration: none; }
+  .input_url:hover { background-color: transparent; background: transparent; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; text-decoration: none; }
+
+  .input_link_search_f2 { font-size: 0.9em; background-color: #f2f2f2; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer;  }
+  .input_link_search_f2:hover { font-size: 0.9em; background-color: #f2f2f2; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .input_link_search_w { font-size: 0.9em; background-color: white; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_search_w:hover { font-size: 0.9em; background-color: white; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .input_link_search_g { font-size: 0.9em; background-color: #a6e8a6; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_search_g:hover { font-size: 0.9em; background-color: #a6e8a6; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .error_back_link { font-size: 1.0em; font-weight: bold; background-color: white; color: #29396b; border: 0px solid #006; cursor:pointer; }
+  .error_back_link:hover { font-size: 1.0em; font-weight: bold; background-color: white; color: #E56717; border: 0px solid #006; cursor:pointer; }
+
+  .unir_vlan_link { font-size: 1.1em; font-weight: bold; background-color: white; color: #29396b; border: 0px solid #006; cursor:pointer; }
+  .unir_vlan_link:hover { font-size: 1.1em; font-weight: bold; background-color: white; color: #E56717; border: 0px solid #006; cursor:pointer; }
+
+  .audit_page_link { font-size: 0.85em; background-color: white; color: gray; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .audit_page_link:hover { font-size: 0.85em; background-color: white; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .audit_page_link_last { background-color: white; color: gray; font-weight: bold; border: 0px solid #006; }
+
+  .audit_page_link_actual { background-color: white; color: black; font-size: 1.2em; font-weight: bold; border: 0px solid #006; }
+
+
+  tr.show_detail:hover { background-color: #D1D8DD; color: #de5308; }
+  tr.show_detail_hosts:hover { background-color: #D1D8DD; }
+
+  tr.show_detail_disabled:hover { background-color: #D1D8DD; }
+
+  tr.show_detail_green { color: green; }
+  tr.show_detail_green:hover { background-color: #D1D8DD; color: #de5308; }
+
+  tr.show_detail_green_disabled { color: green; }
+  tr.show_detail_green_disabled:hover { background-color: #D1D8DD; color: #de5308; }
+
+  tr.show_detail_brown:hover { background-color: #d99100; color: white; }
+
+
+  .table_text { font-size: 0.8em; font-weight: bold; line-height: 1.5em; }
+  .table_text_about { font-size: 1.5em; line-height: 1.5em; }
+
+  .headline_administrate_text { font-size: 1.5em; font-weight: bold; }
+  .headline_ocs_fetch { font-size: 1.3em; font-weight: bold; }
+
+  .down_line { height: 1px;  border: 0; width: 99%; color: gray; background-color: gray}
+  .down_text { float: right; font-size: 0.7em; color: gray; }
+  .down_text_lang { float: left; color: gray; }
+
+  .sinc_text { font-size: 0.8em; }
+
+  .import_form { margin: 0; float: right; display: inline; }
+
+  .help_text { font-size: 0.9em; line-height: 1.5em; font-weight: normal; }
+
+  .free_adds_text { background-color: #038313; color: white; font-weight: bold; }
+  .free_adds_text:hover { background-color: #049916; color: white; font-weight: bold; }
+
+  .free_ranges_block { background-color: #77ab77; color: black; ;padding: 1px; padding-bottom: 2px;display: block; width: 52em; border-width: 3px; border-style:solid;}
+  .free_ranges_block:hover { background-color: #88b588; color: black; ;padding: 1px; padding-bottom: 2px;display: block; width: 52em; border-width: 3px; border-style:solid;}
+
+  tr.free_ranges { background-color: #038313; color: #03ff13; }
+  tr.free_ranges:hover { background-color: #049916; color: #03ff13; }
+
+  tr.stat_table { font-size: 1.1em; }
+
+ .RedBold { font-weight: bolder; color: red; }
+
+  .execute_link { font-size: 1.2em; font-weight: bold; background-color: white; color: #29396b; border: 0px solid #006; cursor:pointer; }
+  .execute_link:hover { font-size: 1.2em; font-weight: bold; background-color: white; color: #E56717; border: 0px solid #006; cursor:pointer; }
+
+  .execute_link_right { float: right; font-size: 1.4em; font-weight: bold; background-color: white; color: #29396b; border: 0px solid #006; cursor:pointer; }
+  .execute_link_right:hover { float: right; font-size: 1.4em; font-weight: bold; background-color: white; color: #E56717; border: 0px solid #006; cursor:pointer; }
+
+  div#SincButtons { float: right; }
+
+  .create_red_intro_message_text { color: gray; font-weight: bold; }
+
+  .client_name_head_text { color: green; font-weight: bolder; font-style: italic; }
+
+  .host_table_head { font-size: 0.9em; background-color: white; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .host_table_head:hover { font-size: 0.9em; background-color: white; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .host_table { background: yellow; color: red; font-size: 20px; line-height: 54px; }
+
+  .UnifiedVlanLink { margin: 0; padding: 0; color: #29396b; background-color: white; font-size: 1.0em; font-weight: normal; border: 0px solid #006; cursor:pointer; }
+  .UnifiedVlanLink:hover { margin: 0; padding: 0; color: #de5308; background-color: white; font-weight: normal; border: 0px solid #006; cursor:pointer; }
+
+
+  .button { border: none; background: url('/imagenes/lupe.png') no-repeat top left; width: 30px; height: 20px; }
+  .button:hover { border: none; background: url('/imagenes/lupeh.png') no-repeat top left; }
+  .info_button { border: none; background: url('/imagenes/info.png') no-repeat center; width: 20px; height: 17px; cursor:pointer; }
+  .info_button:hover { border: none; background: url('/imagenes/info_hover.png') no-repeat center; width: 20px; height: 17px; cursor:pointer; }
+  .history_button { border: none; background: url('/imagenes/history.png') no-repeat center; width: 15px; height: 17px; cursor:pointer; text-decoration: none;}
+  .history_button:hover { border: none; background: url('/imagenes/history_hover.png') no-repeat center; width: 15px; height: 17px; cursor:pointer; text-decoration: none;}
+  .ocs_button { border: none; background: url('/imagenes/ocs.png') no-repeat center; width: 30px; height: 20px; cursor:pointer; text-decoration: none;}
+  .ocs_button:hover { border: none; background: url('/imagenes/ocs_hover.png') no-repeat center; width: 30px; height: 20px; cursor:pointer; text-decoration: none;}
+  .net_overview_button { border: none; background: url('/imagenes/net_overview.png') no-repeat top left; width: 20px; height: 17px; cursor:pointer; }
+  .net_overview_button:hover { border: none; background: url('/imagenes/net_overview_hover.png') no-repeat top left; width: 20px; height: 17px; cursor:pointer; }
+  .free_ranges1_button { border: none; background: url('/imagenes/free_ranges1.png') no-repeat top left; width: 20px; height: 17px; cursor:pointer; }
+  .free_ranges1_button:hover { border: none; background: url('/imagenes/free_ranges1_hover.png') no-repeat top left; width: 20px; height: 17px; cursor:pointer; }
+  .edit_host_button { border: none; background: url('/imagenes/edit_host.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .edit_host_button:hover { border: none; background: url('/imagenes/edit_host_hover.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .edit_button { border: none; background: url('/imagenes/edit.png') no-repeat top left; width: 25px; height: 20px; cursor:pointer; }
+  .edit_button:hover { border: none; background: url('/imagenes/edit_hover.png') no-repeat top left; width: 25px; height: 20px; cursor:pointer; }
+  .delete_button { border: none; background: url('/imagenes/delete.png') no-repeat top left; width: 30px; height: 20px; cursor:pointer; }
+  .delete_button:hover { border: none; background: url('/imagenes/delete_hover.png') no-repeat top left; width: 30px; height: 20px; cursor:pointer; }
+  .delete_host_button:hover { border: none; background: url('/imagenes/delete_host_gray_hover.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .delete_host_button { border: none; background: url('/imagenes/delete_host_gray.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .filter_button { border: none; background: url('/imagenes/filter.png') no-repeat top left; width: 30px; height: 22px; cursor:pointer; }
+  .filter_button:hover { border: none; background: url('/imagenes/filter_hover.png') no-repeat top left; width: 30px; height: 22px; cursor:pointer; }
+  .vaciar_button { border: none; background: url('/imagenes/delete_gray.png') no-repeat top left; width: 22px; height: 20px; cursor:pointer; }
+  .vaciar_button:hover { border: none; background: url('/imagenes/delete_gray_hover.png') no-repeat top left; width: 22px; height: 20px; cursor:pointer; }
+  .sinc_button { border: none; background: url('/imagenes/sync_dns.png') no-repeat top left; width: 24px; height: 20px; cursor:pointer; }
+  .sinc_button:hover { border: none; background: url('/imagenes/sync_dns_hover.png') no-repeat top left; width: 24px; height: 20px; cursor:pointer; }
+  .rangos_button { border: none; background: url('/imagenes/reserve_range.png') no-repeat top left; width: 35px; height: 16px; cursor:pointer; }
+  .rangos_button:hover { border: none; background: url('/imagenes/reserve_range_hover.png') no-repeat top left; width: 35px; height: 16px; cursor:pointer; }
+  .split_button { border: none; background: url('/imagenes/split.png') no-repeat top left; width: 35px; height: 16px; cursor:pointer; }
+  .split_button:hover { border: none; background: url('/imagenes/split_hover.png') no-repeat top left; width: 35px; height: 16px; cursor:pointer; }
+
+
+  td.net_overview_responds_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/ping_green34_big.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_responds_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/ping_green34_big_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_no_responds_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/ping_red34_big.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_no_responds_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/ping_red34_big_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/ping_gray34_big.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_never_checked_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/ping_gray34_big_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_unused_button { border: none; background: url('/imagenes/ping_circle.png') no-repeat top left; width: 14px; height: 14px; cursor:pointer; }
+  td.net_overview_unused_button:hover { color: orange; font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/ping_circle_hover.png') no-repeat top left; width: 14px; height: 14px; cursor:pointer; }
+  td.net_overview_none_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/none.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_none_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/none.png') no-repeat top left; width: 34px; height: 32px; cursor:pointer; }
+  td.net_overview_responds_unasigned_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/ping_green34_big.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; text-decoration: blink;}
+  td.net_overview_responds_unasigned_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/ping_green34_big_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; text-decoration: blink;}
+
+  td.net_overview_responds_range_button { font-size: 0.6em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/ping_green34_big.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_responds_range_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/ping_green34_big_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_no_responds_range_button { font-size: 0.6em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/ping_red34_big.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_no_responds_range_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/ping_red34_big_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_never_checked_range_button { font-size: 0.6em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/ping_gray34_big.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_never_checked_range_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/ping_gray34_big_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_none_range_button { font-size: 0.6em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/none.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  td.net_overview_none_range_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/none.png') no-repeat top left; width: 34px; height: 32px; cursor:pointer; }
+  td.net_overview_responds_unasigned_range_button { font-size: 0.6em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/ping_green34_big.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; text-decoration: blink;}
+  td.net_overview_responds_range_unasigned_button:hover { color: orange; font-size: 0.7em; font-weight: bold; border: none; background: #eaeaea url('/imagenes/ping_green34_big_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; text-decoration: blink;}
+
+
+  .unused_button { border: none; background: url('/imagenes/unused.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .unused_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/unused_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .router_ok_button { font-weight: bold; border: none; background: url('/imagenes/router_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .router_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/router_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .router_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/router_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .router_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/router_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .router_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/router_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .router_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/router_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .switch_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/switch_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .switch_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/switch_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .switch_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/switch_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .switch_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/switch_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .switch_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/switch_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .switch_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/switch_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .server_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/server_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .server_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/server_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .server_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/server_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .server_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/server_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .server_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/server_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .server_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/server_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .workstation_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/workstation_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .workstation_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/workstation_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .workstation_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/workstation_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .workstation_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/workstation_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .workstation_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/workstation_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .workstation_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/workstation_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .printer_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/printer_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .printer_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/printer_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .printer_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/printer_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .printer_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/printer_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .printer_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/printer_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .printer_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/printer_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .unknown_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/unknown_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .unknown_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/unknown_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .unknown_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/unknown_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .unknown_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/unknown_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .unknown_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/unknown_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .unknown_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/unknown_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .firewall_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/firewall_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .firewall_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/firewall_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .firewall_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/firewall_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .firewall_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/firewall_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .firewall_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/firewall_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .firewall_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/firewall_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .mobil_equipo_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/mobil_equipo_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .mobil_equipo_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/mobil_equipo_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .mobil_equipo_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/mobil_equipo_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .mobil_equipo_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/mobil_equipo_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .mobil_equipo_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/mobil_equipo_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .mobil_equipo_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/mobil_equipo_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .other_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/other_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .other_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/other_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .other_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/other_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .other_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/other_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .other_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/other_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .other_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/other_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .short_view_button { border: none; background: url('/imagenes/short_view.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .short_view_button:hover { border: none; background: url('/imagenes/short_view_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .long_view_button { border: none; background: url('/imagenes/long_view.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .long_view_button:hover { border: none; background: url('/imagenes/long_view_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .detailed_view_button { border: none; background: url('/imagenes/detailed_view.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .detailed_view_button:hover { border: none; background: url('/imagenes/detailed_view_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .database_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/database_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .database_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/database_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .database_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/database_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .database_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/database_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .database_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/database_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .database_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/database_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .phone_ok_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/phone_ok.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .phone_ok_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/phone_ok_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .phone_failed_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/phone_failed.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .phone_failed_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/phone_failed_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .phone_never_checked_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/phone_never_checked.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .phone_never_checked_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/phone_never_checked_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .none_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/none.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .none_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/none.png') no-repeat top left; width: 34px; height: 32px; cursor:pointer; }
+  .discover_snmp_button { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/discover_snmp.png') no-repeat top left; width: 26px; height: 20px; cursor:pointer; }
+  .discover_snmp_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/discover_snmp_hover.png') no-repeat top left; width: 26px; height: 20px; cursor:pointer; }
+
+
+  .help_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/help.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer;}
+  .help_button:hover { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/help_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer;}
+  .help_link { background: url('/imagenes/help.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .help_link:hover { background: url('/imagenes/help_hover.png') no-repeat top left; width: 34px; height: 34px; cursor:pointer; }
+  .help_link_link { text-decoration: none;}
+  .overview_table_text { font-size: 0.6em; font-weight: bold; border: none; cursor:pointer;}
+
+  .go_to_top_button { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/go_to_top.png') no-repeat top left; width: 19px; height: 19px; cursor:pointer;}
+  .go_to_top_button:hover { font-size: 0.6em; font-weight: bold; border: none; background: url('/imagenes/go_to_top_hover.png') no-repeat top left; width: 19px; height: 19px; cursor:pointer;}
+
+  .change_client_button { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/change_client.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .change_client_button:hover { font-size: 0.7em; font-weight: bold; border: none; background: url('/imagenes/change_client_hover.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .edit_client_button { border: none; background: url('/imagenes/edit.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .edit_client_button:hover { border: none; background: url('/imagenes/edit_hover.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+
+  .reset_text_field_button { border: none; background: url('/imagenes/reset_text_field.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .reset_text_field_button:hover { border: none; background: url('/imagenes/reset_text_field_hover.png') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+
+
+
+  .lang_it_button { border: none; background: url('/imagenes/bandera_it.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_it_button:hover { border: none; background: url('/imagenes/bandera_it_hover.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_de_button { border: none; background: url('/imagenes/bandera_de.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_de_button:hover { border: none; background: url('/imagenes/bandera_de_hover.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_en_button { border: none; background: url('/imagenes/bandera_en.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_en_button:hover { border: none; background: url('/imagenes/bandera_en_hover.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_es_button { border: none; background: url('/imagenes/bandera_es.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_es_button:hover { border: none; background: url('/imagenes/bandera_es_hover.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_cat_button { border: none; background: url('/imagenes/bandera_cat.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+  .lang_cat_button:hover { border: none; background: url('/imagenes/bandera_cat_hover.gif') no-repeat top left; width: 20px; height: 20px; cursor:pointer; }
+
+
+  .nagios_url_button { border: none; background: url('/imagenes/apps/nagios.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .nagios_url_button:hover { border: none; background: url('/imagenes/apps/nagios.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .wiki_url_button { border: none; background: url('/imagenes/apps/wiki.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .wiki_url_button:hover { border: none; background: url('/imagenes/apps/wiki.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .splunk_url_button { border: none; background: url('/imagenes/apps/splunk.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .splunk_url_button:hover { border: none; background: url('/imagenes/apps/splunk.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .cacti_url_button { border: none; background: url('/imagenes/apps/cacti.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .cacti_url_button:hover { border: none; background: url('/imagenes/apps/cacti.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .munin_url_button { border: none; background: url('/imagenes/apps/munin.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .munin_url_button:hover { border: none; background: url('/imagenes/apps/munin.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .graphite_url_button { border: none; background: url('/imagenes/apps/graphite.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .graphite_url_button:hover { border: none; background: url('/imagenes/apps/graphite.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .mrtg_url_button { border: none; background: url('/imagenes/apps/mrtg.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+  .mrtg_url_button:hover { border: none; background: url('/imagenes/apps/mrtg.png') no-repeat top left; padding:3px; width: 20px; height: 20px; cursor:pointer; }
+
+
+
+OPTION.brown{color:brown; background-color:brown;}
+OPTION.OrangeRed{color:OrangeRed; background-color:OrangeRed;}
+OPTION.DarkSeaGreen{color:DarkSeaGreen; background-color:DarkSeaGreen;}
+OPTION.SeaGreen{color:SeaGreen; background-color:SeaGreen;}
+OPTION.PaleGreen{color:PaleGreen; background-color:PaleGreen;}
+OPTION.LimeGreen{color:LimeGreen; background-color:LimeGreen;}
+OPTION.gold{color:gold; background-color:gold;}
+OPTION.DarkOrange{color:DarkOrange; background-color:DarkOrange;}
+OPTION.white{color:white; background-color:white;}
+OPTION.LightCyan{color:LightCyan; background-color:LightCyan;}
+OPTION.LightBlue{color:LightBlue; background-color:LightBlue;}
+OPTION.dodgerblue{color:dodgerblue; background-color:dodgerblue;}
+OPTION.black{color:black; background-color:black;}
+OPTION.pink{color:pink; background-color:pink;}
+OPTION.red{color:red; background-color:red;}
+

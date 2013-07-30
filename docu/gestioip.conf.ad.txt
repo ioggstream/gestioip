@@ -1,0 +1,127 @@
+# Sample Apache configuration file for GestioIP with authentication
+# against an Microsoft AD (Active Directory)
+
+# NOTE: This is pure Apache. There are many examples of
+# apache configurations which work with AD. So if it doesn't
+# work after the first try search WWW or apache mailing lists
+# for solution. E.g. search for "apache authentication active directory"
+
+
+<Directory "/var/www/gestioip">
+	AddHandler cgi-script .cgi
+	AddDefaultCharset utf8
+	AllowOverride None
+	DirectoryIndex index.cgi
+	Options ExecCGI
+#	AuthType Basic
+#	AuthName GestioIP
+#	AuthUserFile /etc/apache2/users-gestioip
+#	Require user gipoper 
+#	Require user gipadmin 
+        Order allow,deny
+        Allow from all
+	# Allow from .domain.org 192.168.
+
+
+	# you need some valid AD account to search through AD 
+	# you can create a account with minimal rights or use
+	# any other valid AD account
+	AuthLDAPBindDN "some_account@domain.org"
+	AuthLDAPBindPassword "xxxxxxxx"
+
+	# search user
+	# If DN of AD accounts looks like this:
+	# CN=Bugs Bunny,OU=IT Stuff,OU=CarrotInc,DC=domain,DC=org
+	AuthLDAPURL "ldap://ldap.domain.org/ou=CarrotInc,dc=domian,dc=org?sAMAccountName?sub?(objectClass=*)"
+
+	AuthType Basic
+	AuthName "GestioIP - Authentication with AD account"
+	AuthBasicProvider ldap
+
+	require ldap-user ro-user1
+	require ldap-user ro-user2
+	require ldap-user rw-user1
+	require ldap-user rw-user2
+
+	# Require ldap-group CN=Networking,OU=IT Stuff,OU=CarrotInc,DC=domain,DC=org
+
+	# uncomment next line if you get error "(9)Bad file descriptor: Could not open password file: (null)"
+	# AuthUserFile /dev/null
+
+
+	ErrorDocument 401 /gestioip/errors/error401.html
+	ErrorDocument 403 /gestioip/errors/error403.html
+	ErrorDocument 404 /gestioip/errors/error404.html
+	ErrorDocument 500 /gestioip/errors/error500.html
+</Directory>
+
+<Directory "/var/www/gestioip/res">
+	AddHandler cgi-script .cgi
+	AddDefaultCharset utf8
+	AllowOverride None
+	Options ExecCGI
+#	AuthType Basic
+#	AuthName GestioIP
+#	AuthUserFile /etc/apache2/users-gestioip
+#	Require user gipadmin 
+        Order allow,deny
+        Allow from all
+	# Allow from .domain.org 192.168.
+
+
+	AuthLDAPBindDN "some_account@domain.org"
+	AuthLDAPBindPassword "xxxxxxxx"
+	AuthLDAPURL "ldap://ldap.domain.org/ou=CarrotInc,dc=domian,dc=org?sAMAccountName?sub?(objectClass=*)"
+
+	AuthType Basic
+	AuthName "GestioIP - Authentication with AD account"
+	AuthBasicProvider ldap
+
+	require ldap-user rw-user1
+	require ldap-user rw-user2
+
+	# Require ldap-group CN=Networking,OU=IT Stuff,OU=CarrotInc,DC=domain,DC=org
+
+
+	# uncomment next line if you get error "(9)Bad file descriptor: Could not open password file: (null)"
+	# AuthUserFile /dev/null
+
+
+	ErrorDocument 401 /gestioip/errors/error401.html
+	ErrorDocument 403 /gestioip/errors/error403.html
+	ErrorDocument 404 /gestioip/errors/error404.html
+	ErrorDocument 500 /gestioip/errors/error500.html
+</Directory>
+
+<Directory "/var/www/gestioip/priv">
+	AddDefaultCharset utf8
+	AllowOverride None
+	Order deny,allow
+	Deny from all
+	ErrorDocument 401 /gestioip/errors/error401.html
+	ErrorDocument 403 /gestioip/errors/error403.html
+	ErrorDocument 404 /gestioip/errors/error404.html
+	ErrorDocument 500 /gestioip/errors/error500.html
+</Directory>
+
+<Directory "/var/www/gestioip/modules">
+	AddDefaultCharset utf8
+	AllowOverride None
+	Order deny,allow
+	Deny from all
+	ErrorDocument 401 /gestioip/errors/error401.html
+	ErrorDocument 403 /gestioip/errors/error403.html
+	ErrorDocument 404 /gestioip/errors/error404.html
+	ErrorDocument 500 /gestioip/errors/error500.html
+</Directory>
+
+<Directory /var/www/gestioip/errors>
+	AddDefaultCharset utf8
+	AllowOverride None
+	Satisfy any
+	Allow from all 
+	ErrorDocument 401 /gestioip/errors/error401.html
+	ErrorDocument 403 /gestioip/errors/error403.html
+	ErrorDocument 404 /gestioip/errors/error404.html
+	ErrorDocument 500 /gestioip/errors/error500.html
+</Directory>

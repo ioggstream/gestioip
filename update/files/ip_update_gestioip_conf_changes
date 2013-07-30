@@ -1,0 +1,51 @@
+
+################################################
+### changes made by update_gestioip.sh (v3.0) ##
+################################################
+
+# Actualize IPv4 networks
+# Default: yes
+actualize_ipv4_dns=yes
+
+# Actualize IPv6 networks
+# Default: yes
+actualize_ipv6_dns=yes
+
+# Actualize IPv4 networks
+# Default: yes
+actualize_ipv4_snmp=yes
+
+# Actualize IPv6 networks
+# Default: yes
+actualize_ipv6_snmp=yes
+
+
+## SNMP v3
+
+# SNMP user name
+# Default:
+snmp_user_name=
+
+# Security Level
+# allowed values: noAuthNoPriv, authNoPriv, authPriv
+# Default: authNoPriv
+sec_level=authNoPriv
+
+# Auth Protocol
+# allowed values: MD5, SHA
+# Default: MD5
+auth_proto=MD5
+
+# Auth Password
+# Default: 
+auth_pass=
+
+# Priv Protocol
+# allowed values: DES, 3DES, AES
+# Default: 3DES
+priv_proto=3DES
+
+# Auth Password
+# Default: 
+priv_pass=
+

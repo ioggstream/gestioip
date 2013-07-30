@@ -1,0 +1,64 @@
+
+GestioIP 2.2 IPAM
+IP address management software
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++ Net::Ping::External Perl Module ignores timeout option +++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+GestioIP's automatic actualization of networks as well as the
+"host check" function works with the Perl Module Net::Ping::External.
+Because Net::Ping::External doesn't accept timeout argument under
+Linux, it works with the default timeout of 10s.
+
+With a small modification in the source-code of the file External.pm
+you can fix this problem and make automatic actualization even more
+faster.
+
+The ping version of most actual Linux distributions uses the
+-W option to specify ping timeout
+
+
+Patch Net::Ping::External:
+
+* Consult "ping" man page to check if ping supports -W argument:
+
+   $ man ping
+
+(If your ping implementation uses another argument than -W use the
+other argument instead)
+
+
+* find Perl Module External.pm:
+
+   $ perl -MFile::Find=find -MFile::Spec::Functions -lwe 'find { wanted => sub { print canonpath $_ if /\.pm\z/ }, no_chdir => 1 }, @INC' | grep External.pm
+
+
+* open External.pm with your favorite editor and find the line
+
+   sub _ping_linux {
+
+some lines later you find the line
+
+   $command = "ping -c $args{count} $args{host}"
+
+to fix the timeout problem add the -W argument to the line
+
+   $command = "ping -c $args{count} -W $args{timeout} $args{host}";
+
+
+save and close the file External.pm
+
+
+
+That's it! Automatic actualization and host check will now work with a
+timeout of 2 seconds.
+
+
+
+
+=================================================
+GestioIP Copyright (C) Marc Uebel 2011 <contact@gestioip.net>
+

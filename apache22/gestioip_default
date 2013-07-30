@@ -1,0 +1,72 @@
+# Apache configuration file for GestioIP
+
+#Alias
+
+<Directory "/var/www/gestioip">
+	AddHandler cgi-script .cgi
+	AddDefaultCharset utf8
+	AllowOverride None
+	DirectoryIndex index.cgi
+	Options ExecCGI
+	AuthType Basic
+	AuthName GestioIP
+	AuthUserFile /etc/apache2/users-gestioip
+	Require user gipoper
+	Require user gipadmin
+        Order allow,deny
+        Allow from all
+	ErrorDocument 401 /errors/error401.html
+	ErrorDocument 403 /errors/error403.html
+	ErrorDocument 404 /errors/error404.html
+	ErrorDocument 500 /errors/error500.html
+</Directory>
+
+<Directory "/var/www/gestioip/res">
+	AddHandler cgi-script .cgi
+	AddDefaultCharset utf8
+	AllowOverride None
+	Options ExecCGI
+	AuthType Basic
+	AuthName GestioIP
+	AuthUserFile /etc/apache2/users-gestioip
+	Require user gipadmin 
+        Order allow,deny
+        Allow from all
+	ErrorDocument 401 /errors/error401.html
+	ErrorDocument 403 /errors/error403.html
+	ErrorDocument 404 /errors/error404.html
+	ErrorDocument 500 /errors/error500.html
+</Directory>
+
+<Directory "/var/www/gestioip/priv">
+	AddDefaultCharset utf8
+	AllowOverride None
+	Order deny,allow
+	Deny from all
+	ErrorDocument 401 /errors/error401.html
+	ErrorDocument 403 /errors/error403.html
+	ErrorDocument 404 /errors/error404.html
+	ErrorDocument 500 /errors/error500.html
+</Directory>
+
+<Directory "/var/www/gestioip/modules">
+	AddDefaultCharset utf8
+	AllowOverride None
+	Order deny,allow
+	Deny from all
+	ErrorDocument 401 /errors/error401.html
+	ErrorDocument 403 /errors/error403.html
+	ErrorDocument 404 /errors/error404.html
+	ErrorDocument 500 /errors/error500.html
+</Directory>
+
+<Directory /var/www/gestioip/errors>
+	AddDefaultCharset utf8
+	AllowOverride None
+	Satisfy any
+	Allow from all 
+	ErrorDocument 401 /errors/error401.html
+	ErrorDocument 403 /errors/error403.html
+	ErrorDocument 404 /errors/error404.html
+	ErrorDocument 500 /errors/error500.html
+</Directory>

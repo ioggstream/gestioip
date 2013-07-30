@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<head><title>Gesti&oacute;IP</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="/errors/stylesheet.css">
+
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+
+<div id="AllBox">
+<div id="TopBox">
+<table border="0" width="100%" cellpadding="0"><tr><td width="160px">
+<table border="0" style="border-collapse:collapse">
+<tr><td align="right" nowrap><span class="TopTextSearchHead"> networks</span><br><form name="search_red_detail" method="POST" action="/ip_searchred_form.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuDetailLink" value="advanced" name="B1"></form></td><td><form name="search_red" method="POST" action="/ip_searchred.cgi" style="display:inline"><input type="hidden" name="search_index" value="true"> <input name="red_search" type="text"  size="14" maxlength="50" class="TopSearchInput"></td><td><input name="client_id" type="hidden" value="1"><input type="submit" value="" class="button" style="cursor:pointer;"></form></td></tr>
+
+<tr><td align="right" nowrap><span class="TopTextSearchHead"> hosts</span><br><form name="search_host_detail" method="POST" action="/ip_searchip_form.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuDetailLink" value="advanced" name="B1"></form></td><td><form name="search_host" method="POST" action="/ip_searchip.cgi" style="display:inline"><input type="hidden" name="search_index" value="true"><input name="hostname" type="text" size="14" maxlength="50" class="TopSearchInput"></td><td><input name="client_id" type="hidden" value="1"><input type="submit" value="" class="button" style="cursor:pointer;">
+</form> </td></tr>
+</table>
+
+</td><td width="70px">
+</td>
+<td><table border="0" width="100%" style="border-collapse:collapse"><tr><td align="left" nowrap>
+<form name="show_networks" method="POST" action="/index.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLinkBold" value="show networks" name="B1"></form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <ul>
+            <li>
+              networks
+                <ul>
+			<li><form name="insertred" method="POST" action="/res/ip_insertred_form.cgi"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="new" name="B1"></form></li>
+
+			<li><form name="modred" method="POST" action="/res/ip_modred_list.cgi"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="change/delete" name="B1"></form></li>
+
+			<li><form name="unirred" method="POST" action="/res/ip_unirred_form.cgi"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="join" name="B1"></form></li>
+
+			<li><form name="free_range" method="POST" action="/ip_show_free_range.cgi"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="show free ranges" name="B1"></form></li>
+
+                </ul>
+            </li>
+            
+            <li>
+              VLANs
+                <ul>
+
+			<li><form name="show_vlans" method="POST" action="/show_vlans.cgi" style="display:inline;"><input type="hidden" name="mode" value="show"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="show" name="B1"></form></li>
+			<li><form name="insert_vlans" method="POST" action="/res/ip_insertvlan_form.cgi" style="display:inline;"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="new" name="B1"></form></li>
+			<li><form name="unir_vlans" method="POST" action="/show_vlans.cgi" style="display:inline;"><input type="hidden" name="mode" value="unir"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="unify" name="B1"></form></li>
+			<li><form name="show_vlan_providors" method="POST" action="/ip_show_vlanproviders.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="show VLAN providers" name="B1"></form></li>
+			<li><form name="vlan_providors" method="POST" action="/res/ip_insert_vlanclient_form.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="new VLAN provider" name="B1"></form></li>
+                </ul>            
+            </li>
+            
+            <li>
+              import/export
+                <ul>
+
+			<li><form name="import_red_spread" method="POST" action="/res/ip_import_spreadsheet_form.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="import networks from spreadsheet" name="B1"></form></li>
+			<li><form name="import_snmp" method="POST" action="/res/ip_import_snmp_form.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="import networks via SNMP query" name="B1"></form></li>
+			<li><form name="import_host_spread" method="POST" action="/res/ip_import_host_spreadsheet_form.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="import hosts from spreadsheet" name="B1"></form></li>
+			<li><form name="import_vlans" method="POST" action="/res/ip_import_vlans_snmp_form.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="import VLANs via SNMP" name="B1"></form></li>
+			<li><form name="export" method="POST" action="/res/ip_export_form.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="export networks or hosts to CSV" name="B1"></form></li>
+                </ul>            
+            </li>
+            
+            <li>
+               manage
+                <ul>
+
+			<li><form name="manage_gestioip" method="POST" action="/res/ip_manage_gestioip.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="manage Gesti&oacute;IP" name="B1"></form></li>
+			<li><form name="modclient" method="POST" action="/res/ip_modclient.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="clients" name="B1"></form></li>
+			<li><form name="admin" method="POST" action="/res/ip_admin.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="sites and categories" name="B1"></form></li>
+			<li><form name="modcolumns" method="POST" action="/res/ip_modcolumns.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="custom columns" name="B1"></form></li>
+			<li><form name="show_stat" method="POST" action="/ip_show_stat.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="statistics" name="B1"></form></li>
+			<li><form name="audit" method="POST" action="/res/show_audit.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="audit" name=""></form></li>
+                </ul>            
+            </li>
+
+            <li>
+
+              help
+                <ul>
+			<li><form name="docu" method="POST" action="http://www.gestioip.net/documentation_gestioip_en.html" style="display:inline"><input type="submit" class="LeftMenuListLink" value="documentation" name="B1"></form></li>
+			<li><form name="about" method="POST" action="/about_gestioip.cgi" style="display:inline"><input type="hidden" name="client_id" value="1"><input type="submit" class="LeftMenuListLink" value="about" name="B1"></form></li>
+               </ul>
+            </li>
+        </ul> 
+
+</td></tr><tr><td height="40px" colspan="2" align="left" nowrap>
+
+  <p class="TopText">Server Error 404</p>
+
+</td></tr></table>
+<td align="left" width="155px">
+  <span class="TopTextGestio"><a href="http://www.gestioip.net" target="_blank">Gesti&oacute;IP</a></span>
+<script type="text/javascript">
+document.search_red.red_search.focus();
+</script>
+</td>
+<td>
+</td></tr></table>
+</div>
+
+
+
+<div id="Inhalt">
+<p class="NotifyText">No se puede encontrar el documento</p><br>
+<p><br><p><FORM><INPUT TYPE="BUTTON" VALUE="back" ONCLICK="history.go(-1)" class="error_back_link"></FORM>
+</div>
+</div>
+</body></html>

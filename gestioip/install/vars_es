@@ -1,0 +1,118 @@
+title=instalaci&oacute;n Gesti&oacute;IP
+instalacion_message=Instalaci&oacute;n
+welcome_message=Bienvenido
+welcome_to_message=Bienvenido a la instalaci&oacute;n de Gesti&oacute;IP
+welcome_more_text=Este asistente ayuda a la configuraci&oacute;n de la base de datos de Gesti&oacute;IP en tres pasos:<ul><li>Creaci&oacute;n de la base de datos</li><li>Configuraci&oacute;n de la base de datos</li><li>Personalizaci&oacute;n de Gesti&oacute;IP y fin de la instalaci&oacute;n</li></ul>
+left_dependencies_message=Comprobaci&oacute;n de las dependencias
+left_bbdd_crear_message=Creaci&oacute;n de la BBDD
+left_bbdd_configuration_message=Configuraci&oacute;n de la BBDD
+left_bbdd_termination_message=Fin de la instalaci&oacute;n
+info_message=Gesti&oacute;IP depende de los m&oacute;dulos Perl siguientes:<br><ul><li>DBI</li><li>DBD-mysql</li><li>Net::IP</li><li>Net::Ping::External</li><li>libwww-perl</li><li>Parallel::ForkManager</li></ul><br>El primer paso de la instalaci&oacute;n es la comprobaci&oacute;n si est&aacute;n instalados todos los m&oacute;dulos necesarios.
+check_message=comprueba requerimientos
+check_derechos_message=Comprueba los derechos del fichero ../priv/ip_config. El fichero debe ser "writeable" durante la instalaci&oacute;n<p><br>Por favor corige los derechos del fichero con el comando siguiente: <p><pre><code style="background: black; color: white;">$ sudo chmod -R 777 DocumentRoot/priv</code></pre>
+falta_modulo_message=Hay requerimientos no cumplidos
+faltan_modulos_message=Hay requerimientos no cumplidos
+consulta_install_mod_message=Para instalar el m&oacute;dulo que falta consulta el fichero INSTALL.<i>mi_distribuci&oacute;n</i>. 
+consulta_install_mods_message=Para instalar los m&oacute;dulos que faltan consulta el fichero INSTALL.<i>mi_distribuci&oacute;n</i>. 
+auto_cpan_install_error_mod_noti1= ... o baja el m&oacute;dulo perl del CPAN
+auto_cpan_install_error_mods_noti1= ... o baja los m&oacute;dulos perl del CPAN
+auto_cpan_install_error_mod_noti2= y inst&aacute;lalo manualmente
+auto_cpan_install_error_mods_noti2= y inst&aacute;lalos manualmente
+checks_ok=Todas los comprobaciones OK
+next=siguiente p&aacute;gina
+install1_form_message=Configuraci&oacute;n de la BBDD Mysql
+webserver_host_message=direcci&oacute;n servidor Web
+web_server_hint_message=Si el <b>servidor Web y el servidor Mysql corren en la misma m&aacute;quina</b> pon aqu&iacute; la <b>direcci&oacute;n loopback (127.0.0.1)</b>. En caso contrario pon la IP o el nombre DNS del servidor <i>Web</i>
+bbdd_server_hint_message=Si el <b>servidor Web y el servidor Mysql corren en la misma m&aacute;quina</b> pon aqu&iacute; la <b>direcci&oacute;n loopback (127.0.0.1)</b>. En caso contrario pon la IP o el nombre DNS del servidor <i>Mysql</i>
+bbdd_host_message=direcci&oacute;n servidor Mysql
+sid_message=SID
+bbdd_port_message=puerto Mysql
+bbdd_admin_message=Mysql super user
+bbdd_admin_pass_message=Mysql super user contrase&ntilde;a
+admin_pass_hint_message=El "Mysql super user" y la "Mysql super user contrase&ntilde;a" se necesita solo para la instalaci&oacute;n y no se guarda
+bbdd_user_message=Mysql user
+bbdd_user_pass_message=Mysql user contrase&ntilde;a
+bbdd_user_pass_retype_message=confirmar Mysql user contrase&ntilde;a
+enviar=enviar
+
+bbdd_connect_message=conectando con la bbdd...
+bbdd_crear_message=creando la bbdd nueva
+bbdd_grant_message=Granting acceso a la bbdd nueva...
+bbdd_create_tables_message=Creando tables en la bbdd nueva... 
+
+bbdd_exists_error=Base de datos (SID) ya existe.<p><br>Si no hay otra instancia de Gesti&oacute;IP en este servidor instalada cliquea 
+bbdd_exists_error2=En caso contrario elige otra SID
+install1_ok_message=Se ha creado la base de datos Mysql con &eacute;xito!
+
+install2_form_message=Definici&oacute;n de los centros de proceso de datos (CPDs) y de las categor&iacute;as
+install2_form_info_message=Introduzca los valores en una lista separada con comas (min. una entrada, 10 caracteres por entrada max.)
+install2_form_info_ejemplo_message=Ejemplo: BCN I,BCN II,Madr,A Coru,Sevill
+loc_message=CPDs
+cat_message=Categor&iacute;as hosts
+cat_net_message=Categor&iacute;as redes
+categorias_red=prod,pre,test,desar,desar-test,corp
+install2_loc_error_message=Error: introduce al menos una locaci&oacute;n
+install2_cat_error_message=Error: introduce al menos una categor&iacute;a host
+ya_iniciado_message=Ya se ha inicializado la tabla<p>Se puede cambiar los CPDs y las categor&iacute;as despu&eacute;s de la Instalaci&oacute;n por el interfaz Web.
+
+
+bbdd_insert_loc_message=insertar CPDs
+bbdd_insert_cat_message=insertar categor&iacute;as hosts
+bbdd_insert_cat_net_message=insertar categor&iacute;as de redes
+bbdd_insert_loc_error=Error: no puedo insertar los CPDs
+bbdd_insert_cat_error=Error: no puedo insertar las categor&iacute;as "hosts"
+bbdd_insert_cat_net_error=Error: no puedo insertar las categor&iacute;as "redes"
+bbdd_insert_update_type_error=Error: no puedo insertar los "update types"
+max_signos_loc_message=los CPDs no pueden tener m&aacute;s que 10 caracteres
+max_signos_cat_message=las categor&iacute;as host no pueden tener m&aacute;s que 10 caracteres
+max_signos_cat_net_message=las categor&iacute;as redes no pueden tener m&aacute;s que 10 caracteres
+
+
+#nstall3_message=&iexcl;La instalaci&oacute;n de la base de datos ha terminado con &eacute;xito!
+#install3_info_message1=Para termiar la instalaci&oacute;n de Gesti&oacute;IP ejecuta los comandos siguientes<ul><li>borrar el directorio DocumentRoot/install/:</li><pre><code style="background: black; color: white;">$ sudo rm -r DocumentRoot/install</pre></code><p></ul><p><br><p><br>Ahora se puede acceder a la instalaci&oacute;n de Gesti&oacute;IP por la URL:<p> <form name="free_range" method="POST" action="http://ServerName/"><input type="hidden" name="first_call" value="yes"><input type="submit" class="input_link_w" value="http://ServerName" name="B1"></form><br><p>Have fun!<p><br>Nota: La base de datos est&aacute; por supuesto todav&iacute;a vac&iacute;o. Se puede introducir redes nuevas manualmente (enlace "redes->nueva"), importar redes v&iacute;a SNMP queries o importar redes de hojas de calculo (enlace "importar/exportar"). Para detalles v&eacute;ase la documentaci&oacute;n.
+install3_info_message1=Para termiar la instalaci&oacute;n de Gesti&oacute;IP ejecuta los comandos siguientes<ul><li>borrar el directorio DocumentRoot/install/:</li><pre><code style="background: black; color: white;">$ sudo rm -r DocumentRoot/install</pre></code><p></ul><p><br><p><br>Ahora se puede acceder a la instalaci&oacute;n de Gesti&oacute;IP por la URL:<p> <form name="free_range" method="POST" action="http://ServerName/"><input type="hidden" name="first_call" value="yes"><input type="submit" class="input_link_w" value="http://ServerName" name="B1"></form><br><p>Have fun!<p>
+
+
+delante=delante
+atras=atr&aacute;s
+
+
+bbdd_connect_error=<b>ERROR</b><p>No se puede conectar con la Base de datos<p>Aseg&uacute;ra que est&aacute; levantada la base de datos y comprueba las entradas "servidor Mysql", "puerto Mysql", "Mysql super user" y "Mysql super user contrase&ntilde;a"
+bbdd_connection_error=<b>ERROR</b><p>No se puede conectar con la Base de datos<p>Aseg&uacute;ra que est&aacute; levantada la base de datos y comprueba las entradas "servidor Mysql" y "puerto Mysql"
+bbdd_access_denied_error=<b>ERROR</b><p>No se puede conectar con la Base de datos<p>Comprueba el nombre del "Mysql super user" y de la "Mysql super user contrase&ntilde;a"
+bbdd_remote_root_error_hint=NOTA:<p>"Access denied" o "Host not allowed" errors est&aacute;n frequentamente causado por derechos insuficientes en la base de datos.<p><br>Para asignar los derechos que faltan ejecuta el comando siguiente desde el Mysql command line:<p>GRANT ALL PRIVILEGES ON *.* TO root@<i>'IP_OF_WEBSERVER'</i> IDENTIFIED BY '<i>new_password</i>' WITH GRANT OPTION;<p>Despu&eacute;s de la instalaci&oacute;n se puede revocar los derechos con el comando:<p>REVOKE ALL ON *.* from root@<i>'IP_OF_WEBSERVER'</i>.
+bbdd_connect_error_se=Si est&aacute;n bien introducidos los parametros de la base de datos, un error "Can't connect to MySQL server on..." est&aacute; frequentamente causado pro SELinux.
+se_linux_hint_fedora_message=Nota para Linux basado en Redhat<p>El SELinux evita por defecto que apache inicia coneciones (p.ej. a una base de datos). Con el comando siguiente se puede permitir est&aacute;s coneciones:<p>sudo setsebool -P httpd_can_network_connect=1
+bbdd_connect_gestioip_error=<b>ERROR</b><p>No se ha podido conectar con la base de datos
+bbdd_create_error=<b>ERROR</b><p>No se ha podido crear la bbdd nueva
+bbdd_grant_error=<b>ERROR</b><p>No se ha podido ejecutar el GRANT ALL...
+bbdd_create_table_error=<b>ERROR</b><p>No se han podido crear tablas en el bbdd nueva
+install1_bbdd_port_error=ERROR: introduzca el puerto para acceder al la BBDD
+install1_bbdd_host_error=ERROR: introduzca el hostname o la IP del host donde est&aacute; instalada la BBDD
+install1_webserver_host_error=ERROR: introduzca el hostname o la IP del host donde est&aacute; instalado el servidor Web
+install1_bbdd_su_error=ERROR: introduzca el nombre del bbdd superuser
+install1_bbdd_su_pass_error=ERROR: introduzca la contrase&ntilde;a para el bbdd superuser.<p>Si todav&iacute;a no se ha configurado ninguna contrase&ntilde;a para el usuario root de la base de datos Mysql se puede recuperarlo ahora con el comando "mysqladmin -u root password <i>mypass</i>"
+install1_bbdd_admin_error=ERROR: introduzca el nombre del Mysql user
+install1_bbdd_admin_pass_error=ERROR: introduzca la contrase&ntilde;a para el Mysql user (inverta una)
+install1_bbdd_admin_pass_retype_error=ERROR: confirmar la contrase&ntilde;a para el Mysql user
+install1_bbdd_sid_error=ERROR: introduzca la SID de la bbdd nueva
+install1_admin_pass_noco_error=ERROR: Las contrase&ntilde;as del Mysql user no corresponden
+install1_server_not_igual_error=ERROR: Si la base de datos y el servidor Web est&aacute;n instalados en m&aacute;quinas distintas introduzca la IP del servidor Web y la IP de la base de datos (no 127.0.0.1)
+
+install2_loc_format_error=ERROR de formato en CPDs</b><p>Hay que introducir las CPDs/categor&iacute;as en el formato<p>value1,value2,value3
+install2_cat_format_error=ERROR de formato en categor&iacute;as hosts</b><p>Hay que introducir los locazi&oacute;nes/categor&iacute;as en el formato<p>value1,value2,value3
+mal_signo_error_message=Es sind nur die folgenden Zeichen erlaubt:<p>a-zA-Z0-9_-.&auml;&euml;&iuml;&ouml;&uuml;&Auml;&Euml;&Iuml;&Ouml;&Uuml;&aacute;&eacute;&iacute;&oacute;&uacute;&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;&ccedil;&Ccedil;&agrave;&egrave;&igrave;&ograve;&ugrave;&Agrave;&Egrave;&Igrave;&Ograve;&Ugrave;&ntilde;&Ntilde
+install2_cat_net_format_error=ERROR de formato en categor&iacute;as redes</b><p>Hay que introducir los locazi&oacute;nes/categor&iacute;as en el formato<p>value1,value2,value3
+
+url_dbi=http://search.cpan.org/CPAN/authors/id/T/TI/TIMB/DBI-1.607.tar.gz
+url_net_ip=http://search.cpan.org/CPAN/authors/id/M/MA/MANU/Net-IP-1.25.tar.gz
+url_ping_external=http://search.cpan.org/CPAN/authors/id/C/CH/CHORNY/Net-Ping-External-0.13.zip
+url_lwp=http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/libwww-perl-5.825.tar.gz
+url_fork_manager=http://search.cpan.org/CPAN/authors/id/D/DL/DLUX/Parallel-ForkManager-0.7.5.tar.gz
+url_dbd_mysql=http://search.cpan.org/CPAN/authors/id/C/CA/CAPTTOFU/DBD-mysql-4.011.tar.gz
+
+default_cat_message=Gesti&oacute;IP lleva por defecto las categor&iacute;as host siguientes
+personal_cat_message=En el campo siguiente se puede a&ntilde;adir m&aacute;s categor&iacute;as host (opcional)
+
+back_button=<FORM><INPUT TYPE="BUTTON" VALUE="atr&aacute;s" ONCLICK="history.go(-1)" class="error_back_link"></FORM>
+back_button_inline=<FORM style="display:inline"><INPUT TYPE="BUTTON" VALUE="atr&aacute;s" ONCLICK="history.go(-1)" class="error_back_link"></FORM>

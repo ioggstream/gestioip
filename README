@@ -1,0 +1,23 @@
+
+GestioIP 3.0 IPAM README
+========================
+
+GestioIP is a web based IP address management (IPAM) tool.
+It's designed to quickly find the information that administrators
+frequently need. GestioIP features a front page with integrated search
+and filter functions for both networks and hosts. This lets you find
+information easily and quickly.
+
+Visit www.gestioip.net for more information
+
+
+See docu/GestioIP_3.0_Installation_Guide.pdf for installation instructions
+See docu/GestioIP_3.0_upgrade_Guide.pdf for instructions how to UPGRADE 
+to GestioIP v3.0 (from v2.x)
+Visit http://www.gestioip.net/actualizations_gestioip_en.html for UPDATE
+instructions
+
+
+
+---
+GestioIP Copyright (C) 2013 Marc Uebel <contact@gestioip.net>

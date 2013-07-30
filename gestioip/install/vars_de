@@ -1,0 +1,117 @@
+title=Installation Gesti&oacute;IP
+instalacion_message=Installation
+welcome_message=Willkommen
+welcome_to_message=Willkommen zur Installation von Gesti&oacute;IP
+welcome_more_text=Dieser Assistent hilft bei der Konfiguration der Datenbank f&uuml;r Gesti&oacute;IP in drei Schritten:<ul><li>Erstellung der Datenbank</li><li>Konfiguration der Datenbank</li><li>Personalisierung von Gesti&oacute;IP und Abschluss der Installation</li></ul>
+left_dependencies_message=Pr&uuml;fung der Abh&auml;ngigkeiten
+left_bbdd_crear_message=Erstellung der Datenbank
+left_bbdd_configuration_message=Konfiguration der Datenbank
+left_bbdd_termination_message=Beenden der Installation
+info_message=Gesti&oacute;IP h&auml;ngt von den folgenden Perl Modulen ab:<br><ul><li>DBI</li><li>DBD-mysql</li><li>Net::IP</li><li>Net::Ping::External</li><li>libwww-perl</li><li>Parallel::ForkManager</li></ul><br>Erster Schritt der Installation ist die Pr&uuml;fung ob alle notwendigen Module installiert sind.
+check_message=Abh&auml;ngigkeiten Pr&uuml;fen
+check_derechos_message=W&auml;hrend der Installation muss die Datei DocumentRoot/priv/ip_config "writeable" sein.<p><br>Bitte Rechte mit folgendem Kommando setzen:<p><pre><code style="background: black; color: white;">$ sudo chmod -R 777 DocumentRoot/priv</code></pre>
+falta_modulo_message=Es gibt nicht erf&uuml;llte Abh&auml;ngigkeiten
+faltan_modulos_message=Es gibt nicht erf&uuml;llte Abh&auml;ngigkeiten
+consulta_install_mod_message=Eine Anleitung wie das fehlende Modul installiert werden kann befindet sich in der Datei INSTALL.<i>meine_distribution</i>.             
+consulta_install_mods_message=Eine Anleitung wie die fehlenden Modul installiert werden k&ouml;nnen befindet sich in der Datei INSTALL.<i>meine_distribution</i>.             
+auto_cpan_install_error_mod_noti1= ... oder lade das Modul vom CPAN runter
+auto_cpan_install_error_mods_noti1= ... oder lade die Module vom CPAN runter
+auto_cpan_install_error_mod_noti2= und installiere es h&auml;ndisch
+auto_cpan_install_error_mods_noti2= und installiere sie h&auml;ndisch
+checks_ok=Alle Abh&auml;ngigkeiten erf&uuml;llt!
+next=weiter
+install1_form_message=Konfiguration der Mysql Datenbank
+webserver_host_message=IP oder Hostname<br>Webserver
+web_server_hint_message=Wenn der <b>Web- und der Mysql Server auf dem gleichen Host laufen</b> hier die <b>loopback Adresse (127.0.0.1)</b> eingeben. Ist das nicht der Fall hier die IP oder die DNS Adresse des <i>Webservers</i> eingeben, auf dem Gesti&oacute;IP installiert wurde
+bbdd_server_hint_message=Wenn der <b>Web- und der Mysql Server auf dem gleichen Host laufen</b> hier die <b>loopback Adresse (127.0.0.1)</b> eingeben. Ist das nicht der Fall hier die IP oder die DNS Adresse des <i>Mysql Servers</i> eingeben
+bbdd_host_message=IP oder Hostname<br>Mysql Server
+sid_message=SID
+bbdd_port_message=Mysql Server Port
+bbdd_admin_message=Mysql super user
+bbdd_admin_pass_message=Mysql super user Passwort
+admin_pass_hint_message="Mysql super user" und "Mysql super user Passwort" werden nur zur Installation ben&ouml;tigt und nicht gespeichert
+bbdd_user_message=Mysql user
+bbdd_user_pass_message=Mysql user Passwort
+bbdd_user_pass_retype_message=Mysql user Passwort
+enviar=abschicken
+
+bbdd_connect_message=Verbinden mit dem Mysql Server...
+bbdd_crear_message=Erzeugung der neuen Datenbank
+bbdd_grant_message=Zugriffsrechte f&uuml;r die Datenbank erzeugen...
+bbdd_create_tables_message=Erzeugen der Tabellen in der neuen Datenbank...
+
+bbdd_exists_error=Datenbank (SID) existiert schon - Wenn auf dem Server keine weitere Instanz von Gesti&oacute;IP installiert ist bitte "weiter" anklicken. 
+bbdd_exists_error2=Ist das nicht der Fall bitte eine andere SID w&auml;hlen
+install1_ok_message=Die Mysql Datenbank wurde erfolgreich erstellt!
+
+install2_form_message=Konfiguration Rechenzentren (RZs) und Kategorien
+install2_form_info_message=Komma separierte Liste<br>(mindestens ein Eintrag, maximal 10 Zeichen pro Eintrag)
+install2_form_info_ejemplo_message=Beispiel: HH1,HH2,Berl,F a.M.,M&uuml;n
+loc_message=Rechenzentren
+cat_message=Kategorien Hosts
+cat_net_message=Kategorien Netze
+categorias=Server,Router,Switch,FW,Workst,Drucker,Andere
+categorias_red=Prod,Pre,Test,Entw,Entw-Test,Corp
+install2_loc_error_message=Bitte mindestens ein Rechenzentrum angeben
+install2_cat_error_message=Bitte mindestens eine Kategorie angeben
+ya_iniciado_message=Tabelle wurde schon initialisiert<p>Standorte und Kategorien k&ouml;nnen nach der Installation via Web-Frontend leicht ge&auml;ndert werden
+
+bbdd_insert_loc_message=Rechenzentren eingeben
+bbdd_insert_cat_message=Kategorien Hosts eingeben
+bbdd_insert_cat_net_message=Kategorien Netze eingeben
+bbdd_insert_loc_error=Fehler: Rechenzentren konnten nicht eingef&uuml;gt werden
+bbdd_insert_cat_error=Fehler: Host Kategorien konnten nicht eingef&uuml;gt werden
+bbdd_insert_cat_net_error=Fehler: Netz Kategorien konnten nicht eingef&uuml;gt werden
+bbdd_insert_update_type_error=Fehler: Update Types konnten nicht eingef&uuml;gt werden
+max_signos_loc_message=Fehler: Die Rechenzentren d&uuml;rfen h&ouml;chstens 10 Zeichen enthalten
+max_signos_cat_message=Fehler: Die Host Kategorien d&uuml;rfen h&ouml;chstens 10 Zeichen enthalten
+max_signos_cat_net_message=Fehler: Die Netz Kategorien d&uuml;rfen h&ouml;chstens 10 Zeichen enthalten
+
+
+
+install3_message=Installation der Datenbank erfolgreich!
+#install3_info_message1=Zum Abschluss der Installation bitte die folgenden Befehle ausf&uuml;hren:<p><br><ul><li>L&ouml;schen des Verzeichnisses DocumentRoot/install:</li><p><pre><code style="background: black; color: white;"> $ sudo rm -r DocumentRoot/install</pre></code><p></ul><p><br><p><br>Danach kann &uuml;ber folgende URL auf die neue Installation von Gesti&oacute;IP zugegriffen werden:<p> <form name="free_range" method="POST" action="http://ServerName/"><input type="hidden" name="first_call" value="yes"><input type="submit" class="input_link_w" value="http://ServerName" name="B1"></form><br><p><br>Viel Spa&szlig;!<p><br>Hinweis:<p>Die Datenbank von GestioIP ist jetzt nat&uuml;rlich noch leer. Neue Netzwerke k&ouml;nnen manuell eingegeben werden (Link "Netze->neu") und via SNMP queries oder aus Spreadsheets importiert werden (Link "import/export") (s. Documentation). 
+install3_info_message1=Zum Abschluss der Installation bitte die folgenden Befehle ausf&uuml;hren:<p><br><ul><li>L&ouml;schen des Verzeichnisses DocumentRoot/install:</li><p><pre><code style="background: black; color: white;"> $ sudo rm -r DocumentRoot/install</pre></code><p></ul><p><br><p><br>Danach kann &uuml;ber folgende URL auf die neue Installation von Gesti&oacute;IP zugegriffen werden:<p> <form name="free_range" method="POST" action="http://ServerName/"><input type="hidden" name="first_call" value="yes"><input type="submit" class="input_link_w" value="http://ServerName" name="B1"></form><br><p><br>Viel Spa&szlig;!<p>
+
+
+delante=weiter
+atras=zur&uuml;ck
+
+bbdd_connect_error=<b>ERROR</b><p>Verbindung zur Datenbank fehlgeschlagen<p>Bitte "Mysql Server", "Mysql Port", "mysql super user" und "mysql super user passwort" &uuml;berpr&uuml;fen
+bbdd_connection_error=<b>ERROR</b><p>Verbindung zur Datenbank fehlgeschlagen<p>Bitte "Mysql Server" und "Mysql Port" &uuml;berpr&uuml;fen
+bbdd_access_denied_error=<b>ERROR</b><p>Verbindung zur Datenbank fehlgeschlagen<p>Bitte "mysql super user" und "mysql super user passwort" &uuml;berpr&uuml;fen
+bbdd_remote_root_error_hint=Hinweis<p>"Access denied" oder "Host not allowed" error sind h&auml;ufig auf ungen&uuml;gende Rechte auf der Datenbank zur&uuml;ckzuf&uuml;hren.<p><br>Um die n&ouml;tigen Datenbank Rechte zu erzeugen f&uuml;hre den folgenden Befehl von der Mysql command line aus:<p>GRANT ALL PRIVILEGES ON *.* TO root@'<i>IP_OF_WEBSERVER</i>' IDENTIFIED BY '<i>new_password</i>' WITH GRANT OPTION;<p>Nach der Installation k&ouml;nnen die Rechte mit folgendem Befehl wieder zur&uuml;ckgenommen werden:<p>REVOKE ALL ON *.* from root@'<i>IP_OF_WEBSERVER</i>';
+bbdd_connect_error_se=Wenn die Datenbankparameter korrekt eingegeben wurden ist h&auml;ufig SELinux die Ursache f&uuml;r "Can't connect to MySQL server on..."
+se_linux_hint_fedora_message=Hinweis f&uuml;r Redhat basierte Linux Systeme<p>SELinux verhindert defaultm&auml;&szlig;ig Verbindungen zu remote und lokalen Datenbanken, die von Apache initialisiert werden. Mit dem folgendem Befehl kann dieses Verhalten abgeschaltet werden:<p>sudo setsebool -P httpd_can_network_connect=1
+bbdd_connect_gestioip_error=<b>ERROR</b><p>Verbindung zur Datenbank fehlgeschlagen 
+bbdd_create_error=<b>ERROR</b><p>Erzeugung der neuen Datenbank fehlgeschlagen
+bbdd_grant_error=<b>ERROR</b><p>Kommnado GRANT ALL... fehlgeschlagen
+bbdd_create_table_error=<b>ERROR</b><p>Konnte keine Tabellen in der neuen Datenbank erzeugen
+install1_bbdd_port_error=ERROR: Bitte Datenbank Port angeben
+install1_bbdd_host_error=ERROR: Bitte IP oder Hostname des Datenbank Servers angeben
+install1_bbdd_su_error=ERROR: Bitte Datenbank sueruser eingeben
+install1_bbdd_su_pass_error=ERROR: Bitte Passwort f&uuml;r den Datenbank superuser eingeben.<p><br>Falls noch kein Passwort f&uuml;r den Datenbank superuser in der Mysql Datenbank gesetzt wurde kann das mit dem Befehl<p>"mysqladmin -u root password <i>mypass</i>"<p>nachgeholt werden.<br>
+install1_bbdd_admin_error=ERROR: Bitte Datenbank user eingeben
+install1_bbdd_admin_pass_error=ERROR: Bitte Passwort f&uuml;r den Datenbankbenutzer eingeben (eins ausdenken)
+install1_bbdd_admin_pass_retype_error=ERROR: Bitte Passwort f&uuml;r den Datenbankbenutzer eingeben
+install1_bbdd_sid_error=ERROR: Bitte Datenbank SID eingeben
+install1_admin_pass_noco_error=ERROR: Die Passworte f&uuml;r den Datenbank user stimmen nicht &uuml;berein
+install1_server_not_igual_error=ERROR: Wenn Datenbank und Web Server auf unterschiedlichen Maschinen laufen bitte IP Adresse des Web- und des Datenbank Servers angeben (und nicht 127.0.0.1)
+
+
+install2_loc_format_error=ERROR: Bitte Rechenzentren in folgendem Format eingeben</b><p>Wert1,Wert2,Wert3
+install2_cat_format_error=ERROR: Bitte Host-Kategorien in folgendem Format eingeben</b><p>Wert1,Wert2,Wert3
+mal_signo_error_message=Es sind nur die folgenden Zeichen erlaubt:<p>a-zA-Z0-9_-.&auml;&euml;&iuml;&ouml;&uuml;&Auml;&Euml;&Iuml;&Ouml;&Uuml;&aacute;&eacute;&iacute;&oacute;&uacute;&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;&ccedil;&Ccedil;&agrave;&egrave;&igrave;&ograve;&ugrave;&Agrave;&Egrave;&Igrave;&Ograve;&Ugrave;&ntilde;&Ntilde
+install2_cat_net_format_error=ERROR: Bitte Netz-Kategorien in folgendem Format eingeben &oacute;nes</b><p>Wert1,Wert2,Wert3
+
+url_dbi=http://search.cpan.org/CPAN/authors/id/T/TI/TIMB/DBI-1.607.tar.gz
+url_net_ip=http://search.cpan.org/CPAN/authors/id/M/MA/MANU/Net-IP-1.25.tar.gz
+url_ping_external=http://search.cpan.org/CPAN/authors/id/C/CH/CHORNY/Net-Ping-External-0.13.zip
+url_lwp=http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/libwww-perl-5.825.tar.gz
+url_fork_manager=http://search.cpan.org/CPAN/authors/id/D/DL/DLUX/Parallel-ForkManager-0.7.5.tar.gz
+url_dbd_mysql=http://search.cpan.org/CPAN/authors/id/C/CA/CAPTTOFU/DBD-mysql-4.011.tar.gz
+
+default_cat_message=Gesti&oacute;IP kennt die folgenden Host Kategorien
+personal_cat_message=Im n&auml;chsten Feld k&ouml;nnen optional zus&auml;tzliche Host Kategorien definert werden
+
+back_button=<FORM><INPUT TYPE="BUTTON" VALUE="zur&uuml;ck" ONCLICK="history.go(-1)" class="error_back_link"></FORM>

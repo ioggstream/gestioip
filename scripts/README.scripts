@@ -1,0 +1,40 @@
+gip_health_check.pl - some consistency checks of the GestioIP database.
+	This script will not overwrite entries
+
+
+networks.xls - example file of a network list to import with
+	"import_networks_from_excel.pl"
+
+
+ip_update_gestioip_dns.pl - script for manual or cron-scheduled
+        actualization of the GestioIP database against the DNS.
+	See documentation for more details
+
+
+ip_update_gestioip_snmp.pl - script for manual or cron-scheduled
+        actualization of the GestioIP database via SNMP.
+	See documentation for more details
+
+
+ip_update_gestioip_ocs.pl - script for the cron-scheduled actualization of
+        actualization of the GestioIP database against OCSv1.01/v1.02.3
+	See documentation for more details
+
+
+ip_update_gestioip.conf - configuration file of ip_update_gestioip_dns.pl
+        and ip_update_gestioip_ocs.pl
+
+
+get_networks_snmp.pl - script to import networks via SNMP queries.
+
+
+snmp_targes - List of devices which should be queried by
+	get_networks_snmp.pl
+	See GestioIP documentation for more details
+
+
+directory vars - contains the language files for ip_update_gestip_dns.pl
+       and ip_update_gestip_ocs.pl. Mandatory to run the scripts.
+
+
+README.scripts - this file

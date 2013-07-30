@@ -1,0 +1,89 @@
+# Sample Apache configuration file for GestioIP with authentication
+# against a KERBEROS 5
+
+# NOTE: This is pure Apache. There are many examples of
+# apache configurations which work with KERBEROS. So if it doesn't
+# work after the first try search WWW or apache mailing lists
+# for solution. E.g. search for "apache authentication kerberos"
+
+
+
+#configure kdc, adminserver and realm in kerb5.conf.
+#KERBEROS communcatis via port 88.
+
+#Ein "require valid-user" würde nun alle AD-Authentifizierten lesen und schreiben lassen.
+#Das möchten wir natürlich nicht und erstellen ein Autorisierungsfile.
+# create an authorization file:
+
+#RO: user1@EXAMPLE.COM user2@EXAMPLE.COM ...<CR>
+#RW: user3@EXAMPLE:com ...<CR> 
+
+# All users in one line, sparated with spaces
+#-------------------------------------------
+
+#...
+<Directory "/var/www/gestioip">
+        AddHandler cgi-script .cgi
+        AddDefaultCharset utf8
+        AllowOverride None
+        DirectoryIndex index.cgi
+        Options ExecCGI
+
+#       AuthType Basic
+#       AuthName GestioIP
+#       AuthUserFile /etc/apache2/users-gestioip
+#       Require user gipoper
+#       Require user gipadmin
+
+        AuthName "GestioIP Kerberos"
+        Authtype Kerberos
+        SSLRequireSSL
+        Krb5Keytab /etc/krb5.keytab
+        KrbAuthRealms EXAMPEL.COM
+        KrbMethodNegotiate off
+        KrbSaveCredentials on
+        KrbVerifyKDC off
+        KrbMethodK5Passwd on
+        Authgroupfile /etc/apache2/kerb-ug
+        require group RO RW
+        Order allow,deny
+        Allow from all
+        ErrorDocument 401 /gestioip/errors/error401.html
+        ErrorDocument 403 /gestioip/errors/error403.html
+        ErrorDocument 404 /gestioip/errors/error404.html
+        ErrorDocument 500 /gestioip/errors/error500.html
+</Directory>
+#...
+<Directory "/var/www/gestioip/res">
+        AddHandler cgi-script .cgi
+        AddDefaultCharset utf8
+        AllowOverride None
+        Options ExecCGI
+
+#       AuthType Basic
+#       AuthName GestioIP
+#       AuthUserFile /etc/apache2/users-gestioip
+#       Require user gipadmin
+
+        AuthName "GestioIP Kerberos"
+        Authtype Kerberos
+        SSLRequireSSL
+        Krb5Keytab /etc/krb5.keytab
+        KrbAuthRealms EXAMPEL.COM
+        KrbMethodNegotiate off
+        KrbSaveCredentials on
+        KrbVerifyKDC off
+        KrbMethodK5Passwd on
+        Authgroupfile /etc/apache2/kerb-ug
+        require group RW
+        Order allow,deny
+        Allow from all
+        ErrorDocument 401 /gestioip/errors/error401.html
+        ErrorDocument 403 /gestioip/errors/error403.html
+        ErrorDocument 404 /gestioip/errors/error404.html
+        ErrorDocument 500 /gestioip/errors/error500.html
+</Directory>
+#...
+
+#-------------------------------------------
+#It's recommended to use SSL To avoid that passwords are passed unencrypted over the network

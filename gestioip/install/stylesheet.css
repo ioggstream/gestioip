@@ -1,0 +1,346 @@
+<style type="text/css">
+
+ div#AllBox {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  div#TopBox {
+    background: #29396b;
+    height: 2.9em;
+    width: 100%;
+    border-bottom-width:0.2em;
+    border-bottom-style:solid;
+    border-bottom-color:#d3d3d3;
+  }
+
+  div#LeftMenu {
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+  }
+
+  div#LeftMenuIntroo {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntrooa {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #bbbdc4;
+  }
+
+
+  div#LeftMenuIntro1 {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #d3d3d3;
+  }
+
+  div#LeftMenuIntro1o {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntro1oa {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntro2 {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #d3d3d3;
+  }
+
+  div#LeftMenuIntro2o {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntro2oa {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntro3 {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #d3d3d3;
+  }
+
+  div#LeftMenuIntro3o {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntro3oa {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntro4 {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #d3d3d3;
+  }
+
+  div#LeftMenuIntro4o {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntro4oa {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 1.5em;
+    width: 12em;
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #bbbdc4;
+  }
+
+  div#LeftMenuIntro a:link {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #29396b;
+  }
+
+  div#LeftMenuIntro a:visited {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #29396b;
+  }
+
+  div#LeftMenuLang a:link {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #29396b;
+    text-decoration: none;
+  }
+
+  div#LeftMenuLang a:visited {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #29396b;
+    text-decoration: none;
+  }
+
+  div#LeftMenuLangc a:link {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: gray;
+  }
+
+  div#LeftMenuLangc a:visited {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: gray;
+  }
+
+
+  div#Inhalt {
+    font-size: 1.0em;
+    position:absolute;
+    top:4.6em;
+    left:11em;
+    text-align: left;
+    margin-left: 0.5em;
+    background-color: white;
+  }
+
+  * html div#Inhalt {
+    height: 1em;  /* Workaround gegen den 3-Pixel-Bug des Internet Explorer bis Version 6 */
+  }
+
+  div#Inhalt li {
+    font-size: 0.9em;
+    font-weight: normal;
+    font-style: italic;
+    color: #000000;
+  }
+
+  div#Inhalt a:link {
+    font-size: 1em;
+    font-weight: bold;
+    color: #29396b;
+    text-decoration: none;
+  }
+
+  div#Inhalt a:visited {
+    font-size: 1em;
+    font-weight: bold;
+    color: #29396b;
+    text-decoration: none;
+  }
+
+  div#Inhalt a:hover {
+    font-size: 1em;
+    font-weight: bold;
+    color: #E56717;
+    text-decoration: none;
+  }
+
+
+ .TopImagen {
+    margin: 0; padding: 0.1em;
+   float: right;
+  }
+
+ .TopText {
+    text-align: left;
+    font-size: 150%;
+    margin: 0; padding: 0.1em;
+    padding-left: 3.5em;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+ .TopTextGestio {
+    text-align: left;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 0.5em;
+    font-weight: bolder;
+    color: orange;
+  }
+
+ .HintText {
+    font-size: 0.7em;
+    font-weight: normal;
+    color: #000000;
+ }
+
+ .CommandText {
+    font-size: 0.7em;
+    font-weight: normal;
+    color: red;
+ }
+
+ .CatText {
+    font-size: 0.8em;
+    font-weight: bold;
+ }
+
+  .FAILText { font-weight: bold; color: red; }
+  .OKText { font-weight: bold; color: green; }
+
+  .error_back_link { font-size: 1.0em; font-weight: bold; background-color: white; color: #29396b; border: 0px solid #006; cursor:pointer; }
+  .error_back_link:hover { font-size: 1.0em; font-weight: bold; background-color: white; color: #E56717; border: 0px solid #006; cursor:pointer; }
+
+  .input_link_f2 { background-color: #f2f2f2; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_f2:hover { background-color: #f2f2f2; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+  .input_link_w { background-color: white; color: #29396b; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+  .input_link_w:hover { background-color: white; color: #E56717; font-weight: bold; border: 0px solid #006; cursor:pointer; }
+
+
+</style>

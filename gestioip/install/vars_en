@@ -1,0 +1,116 @@
+title=installation Gesti&oacute;IP
+instalacion_message=Installation
+welcome_message=Welcome
+welcome_to_message=Welcome to the installation of Gesti&oacute;IP
+welcome_more_text=This assistant helps to complete the installation of Gesti&oacute;IP in three steps:<ul><li>Database creation</li><li>Database configuration</li><li>Personalization of Gesti&oacute;IP and completion of installation</li></ul>
+left_dependencies_message=Requirement check
+left_bbdd_crear_message=Database creation
+left_bbdd_configuration_message=Database configuration
+left_bbdd_termination_message=Completion of installation
+info_message=Gesti&oacute;IP depends on the following Perl modules:<br><ul><li>DBI</li><li>DBD-mysql</li><li>Net::IP</li><li>Net::Ping::External</li><li>libwww-perl</li><li>Parallel::ForkManager</li></ul><br>The first step of the installation checks if all dependencies are fulfilled.
+check_message=check requirements
+check_derechos_message=Please check the file permissions../priv/ip_config. The file should be writeable during the instalation.<p><br>Please change the permissions with the following command:<p><pre><code style="background: black; color: white;">$ sudo chmod -R 777 DocumentRoot/priv</code></pre>
+falta_modulo_message=Module missing
+faltan_modulos_message=Modules missing
+consulta_install_mod_message=For instructions how to install the missing module consult the file INSTALL.<i>my_distribution</i>.
+consulta_install_mods_message=For instructions how to install the missing modules consult the file INSTALL.<i>my_distribution</i>.
+auto_cpan_install_error_mod_noti1= ... or download the module from CPAN
+auto_cpan_install_error_mods_noti1= ... or download the modules from CPAN
+auto_cpan_install_error_mod_noti2= and install it manually
+auto_cpan_install_error_mods_noti2= and install them manually
+checks_ok=All dependencies complied!
+next=next page
+install1_form_message=Mysql
+webserver_host_message=Web server address
+web_server_hint_message=If the <b>Web and the Mysql server are running on the same host</b> enter here the <b>loopback address (127.0.0.1)</b>. If no, enter here the IP or the DNS name of the <i>Web server</i>
+bbdd_server_hint_message=If the <b>Web- and the Mysql server are running on the same host</b> enter here the <b>loopback address (127.0.0.1)</b>. If no, enter here the IP or the DNS name of the <i>Mysql server</i>
+bbdd_host_message=Mysql server address
+sid_message=SID
+bbdd_port_message=Mysql port
+bbdd_admin_message=Mysql super user
+bbdd_admin_pass_message=Mysql super user password
+admin_pass_hint_message="Mysql super user" and "Mysql super user Password" are only used during the installation and will not be stored
+bbdd_user_message=Mysql user
+bbdd_user_pass_message=Mysql user password
+bbdd_user_pass_retype_message=retype Mysql user password
+enviar=send
+
+bbdd_connect_message=connecting to the database...
+bbdd_crear_message=creating the new database
+bbdd_grant_message=granting access to the new...
+bbdd_create_tables_message=creating tables in the new database...
+
+bbdd_exists_error=Database (SID) already exists. If there is no other installation of Gesti&oacute;IP on this server click
+bbdd_exists_error2=If you are installing an additional instance please choose another SID
+install1_ok_message=The Mysql database was successfully created
+
+install2_form_message=Configuration of categories and sites
+install2_form_info_message=comma separated list (one entry min., 10 characters per entry max.)
+install2_form_info_ejemplo_message=Example: Lon1,Lon2,NY,Sydney
+loc_message=Sites
+cat_message=Additional<br>host categories 
+cat_net_message=Network categories
+categorias=Server,Router,Switch,Firewall,Workst,Printer,Other
+categorias_red=prod,pre,test,dev,dev-test,corp
+install2_loc_error_message=Please introduce at least one site
+install2_cat_error_message=Please introduce at least on category
+ya_iniciado_message=The tables are already initialized <p>Sites and categories can easily be changed once the installation is completed
+
+
+bbdd_insert_loc_message=insert site
+bbdd_insert_cat_message=insert host category
+bbdd_insert_cat_net_message=insert net category
+bbdd_insert_loc_error=Error: insert sites
+bbdd_insert_cat_error=Error: insert host categories
+bbdd_insert_cat_net_error=Error: insert network categories
+bbdd_insert_update_type_error=Error: insert update types
+max_signos_loc_message=Error: The sites may not contain more than 10 signs
+max_signos_cat_message=Error: The host categories may not contain more than 10 signs
+max_signos_cat_net_message=Error: The network categories may not contain more than 10 signs
+
+
+install3_message=Installation of the database completed successfully!
+install3_info_message1=To finish the installation of Gesti&oacute;IP execute the following command to delete installation directory (DocumentRoot/install/):<p><pre><code style="background: black; color: white;"> $ sudo rm -r DocumentRoot/install </pre></code><p><br>After this you can access to the installation of Gesti&oacute;IP with the URL:<p> <form name="free_range" method="POST" action="http://ServerName/"><input type="hidden" name="first_call" value="yes"><input type="submit" class="input_link_w" value="http://ServerName" name="B1"></form><br><p>Have fun!<p><br>Note:<p>Certainly the database of GestioIP is still empty. To fill Gesti&oacute;IPs database with data you can discover your networks by executing script "initialze_gestioip.pl, create new networks manually (link "networks->new"), import networks from frontend Web via SNMP queries or import networks from spreadsheets (link "import/export"). See the documentation for details.  
+#install3_info_message1=To finish the installation of Gesti&oacute;IP execute the following command to delete installation directory (DocumentRoot/install/):<p><pre><code style="background: black; color: white;"> $ sudo rm -r DocumentRoot/install </pre></code><p><br>After this you can access to the installation of Gesti&oacute;IP with the URL:<p>
+#install3_info_message2=Have fun!<p><br>Note:<p>Certainly the database of GestioIP is still empty. To fill Gesti&oacute;IPs database with data you can discover your networks by executing script "initialze_gestioip.pl, create new networks manually (link "networks->new"), import networks from frontend Web via SNMP queries or import networks from spreadsheets (link "import/export"). See the documentation for details.  
+
+
+delante=next
+atras=back
+
+bbdd_connect_error=<b>ERROR</b><p>Can't connect to database<p>check "Mysql server", "Mysql port", "Mysql super user" and "Mysql super user password" 
+bbdd_connection_error=<b>ERROR</b><p>Can't connect to database<p>check "Mysql server" and "Mysql port" 
+bbdd_access_denied_error=<b>ERROR</b><p>Can't connect to database<p>check "Mysql super user" and "Mysql super user password" 
+bbdd_remote_root_error_hint=<i>Note</i><p>"Access denied" or "Host not allowed" errors are frequently caused by insufficient privileges on the database. To grant the necessary privileges execute:<p>GRANT ALL PRIVILEGES ON *.* TO root@'<i>IP_OF_WEBSERVER</i>' IDENTIFIED BY '<i>new_password</i>' WITH GRANT OPTION;<p>from Mysql's command line. After finishing installation you can revoke the granted rights with the command:<p>REVOKE ALL ON *.* from root@'<i>IP_OF_WEBSERVER</i>';
+bbdd_connect_error_se=If the database parameters are correctly introduced, a "Can't connect to MySQL server on..." error is frequently cause by SELinux.
+se_linux_hint_fedora_message=<i>Note for Redhat based Linux</i><p>SELinux's default behavior is to deny connections to remote hosts or to localhost initialized by apache daemon  (e.g. to a database). With the following command you can allow this type of connections<p>sudo setsebool -P httpd_can_network_connect=1
+bbdd_connect_gestioip_error=<b>ERROR</b><p>Can't connect to database
+bbdd_create_error=<b>ERROR</b><p>Can't create the new database
+bbdd_grant_error=<b>ERROR</b><p>Can't execute GRANT ALL...
+bbdd_create_table_error=<b>ERROR</b><p>Can't create tables in the new database
+install1_bbdd_port_error=ERROR: Introduce the Mysql port
+install1_bbdd_su_error=ERROR: Introduce the database super user
+install1_bbdd_su_pass_error=ERROR: Introduce the database super user password.<p>If until now you haven't set any password for the Mysql database super user, you should do this now with the command "mysqladmin -u root password <i>mypass</i>"
+install1_bbdd_admin_error=ERROR: Introduce the Mysql user
+install1_bbdd_admin_pass_error=ERROR: Introduce (create) a password for the Mysql user
+install1_bbdd_admin_pass_retype_error=ERROR: Introduce the retype-password of the Mysql user
+install1_bbdd_sid_error=ERROR: Introduce the SID of the new database
+install1_admin_pass_noco_error=ERROR: The Mysql user pass and retype-pass do not match
+install1_server_not_igual_error=ERROR: If the database and the Web server are running on different hosts please introduce the IP or hostname of the database and of the Web server (and not 127.0.0.1)
+
+install2_loc_format_error=ERROR in sites</b><p>introduce the sites/categories in the form:<p>value1,value2,value3
+install2_cat_format_error=ERROR en categories hosts</b><p>introduce the sites/categories in the form:<p>value1,value2,value3
+mal_signo_error_message=Only the following signs are allowed:<p>a-zA-Z0-9_-.&auml;&euml;&iuml;&ouml;&uuml;&Auml;&Euml;&Iuml;&Ouml;&Uuml;&aacute;&eacute;&iacute;&oacute;&uacute;&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;&ccedil;&Ccedil;&agrave;&egrave;&igrave;&ograve;&ugrave;&Agrave;&Egrave;&Igrave;&Ograve;&Ugrave;&ntilde;&Ntilde
+install2_cat_net_format_error=ERROR in network categories</b><p>introduce the sites/categories in the form:<p>value1,value2,value3
+
+url_dbi=http://search.cpan.org/CPAN/authors/id/T/TI/TIMB/DBI-1.607.tar.gz
+url_net_ip=http://search.cpan.org/CPAN/authors/id/M/MA/MANU/Net-IP-1.25.tar.gz
+url_ping_external=http://search.cpan.org/CPAN/authors/id/C/CH/CHORNY/Net-Ping-External-0.13.zip
+url_lwp=http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/libwww-perl-5.825.tar.gz
+url_fork_manager=http://search.cpan.org/CPAN/authors/id/D/DL/DLUX/Parallel-ForkManager-0.7.5.tar.gz
+url_dbd_mysql=http://search.cpan.org/CPAN/authors/id/C/CA/CAPTTOFU/DBD-mysql-4.011.tar.gz
+
+default_cat_message=Gesti&oacute;IP comes with the following default host categories
+personal_cat_message=Add additional host categories in the following field (optional)
+
+back_button=<FORM><INPUT TYPE="BUTTON" VALUE="back" ONCLICK="history.go(-1)" class="error_back_link"></FORM>

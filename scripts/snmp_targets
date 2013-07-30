@@ -1,0 +1,10 @@
+# Configuration file of get_networks_snmp.pl of
+# GestioIP
+
+# enter here the hosts which should be queried by
+# get_networks_snmp.pl (one host per line)
+# (dns entry or ip address)
+
+# Note: On core routers with enabled dynamic routing
+# protocols this could take some time (only networks 
+# from local and static routes will be added)

@@ -1,0 +1,16 @@
+###Database configuraton GestioIP
+
+# mysql database host
+bbdd_host=127.0.0.1
+
+# mysql database port
+bbdd_port=3306
+
+# database name
+sid=gestioip
+
+# database user
+user=gestioip
+
+# database user pass
+password=xxxxxxxx
