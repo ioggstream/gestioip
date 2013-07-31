@@ -1,5 +1,7 @@
 package GestioIP;
 
+use diagnostics;
+use warnings;
 use strict;
 use Carp;
 use POSIX;
@@ -13,18 +15,48 @@ use File::Find;
 use Socket;
 use SNMP::Info;
 use Math::BigInt;
+use Data::Dumper;
 
 $VERSION = "3.0";
 my $PATCH_VERSION="22";
 my $DEBUG="0";
 
+
+sub debug(@){
+	print STDERR @_  if $DEBUG;
+}
+
+###
+# new() creates a new object, getting and hashref as an argument
+###
 sub new {
-	my $class = shift;
-	my $self = {};
-	bless($self,$class);
+	my ($class, $args) = @_;
+	
+	# if args is undef, then use a default emtpy hashref
+	# otherwise it must be an hashref
+	$args ||= {};
+	if (ref($args) ne "HASH") {
+		print("LOG: args should be an hashref\n");
+		return undef;
+	}
+	# set  default values
+	my %tmp = (
+		'debug' =>0,
+		'format'=>'html',
+		%{$args}
+	);
+	my $self = \%tmp;
+	
+	# create an object starting from the hashref $self
+	bless($self, $class);	
+
 	return($self);
 }
 
+
+#
+# Get variables from a file
+#
 sub _get_vars {
 	my ( $self, $vars_file ) = @_;
 	my %vars;
@@ -221,13 +253,24 @@ sub get_lang_simple {
 	return $lang;
 }
 
+#
+# Check if the script context is local or web
+#
+sub _get_script_context(){
+	if ( $0 =~ m/\.cgi$/) {
+		return ($0, $ENV{'SCRIPT_NAME'});
+	} else {
+		return (".", $ENV{'SCRIPT_NAME'});
+	}
+	
+}
 sub get_lang {
 	my ($self,$entries_red_por_page,$lang) = @_;
 	my $cgi_dir = $self->get_cgi_dir();
 	my $cgi_base_dir = $cgi_dir;
 	$cgi_base_dir =~ s/\/res//;
-	my $DOCUMENT_ROOT=$0;
-	my $SCRIPT_NAME=$ENV{'SCRIPT_NAME'};
+	my ($DOCUMENT_ROOT, $SCRIPT_NAME) = _get_script_context();
+	
 	##### CHANGE
 	$SCRIPT_NAME =~ s/^\/*(\/.*)/$1/;
 	$DOCUMENT_ROOT =~ s/$SCRIPT_NAME//;
@@ -403,17 +446,18 @@ sub get_server_proto {
 	}
 	return $server_proto
 }
-
 sub print_init {
 	my ( $self, $title, $inhalt, $noti, $vars_file, $client_id, $ip_version, $BM_freerange ) = @_;
+	
+	return unless $self->{'format'} eq 'html';
+	
 	$client_id = "" if ! $client_id;
 	my %lang_vars = $self->_get_vars("$vars_file");
 	my $base_uri = $self->get_base_uri();
 	my $cgi_dir = $self->get_cgi_dir();
 	my $cgi_base_dir = $cgi_dir;
 	$cgi_base_dir =~ s/\/res//;
-	my $DOCUMENT_ROOT=$0;
-	my $SCRIPT_NAME=$ENV{'SCRIPT_NAME'};
+	my ($DOCUMENT_ROOT, $SCRIPT_NAME) = _get_script_context();
 	$DOCUMENT_ROOT =~ s/$SCRIPT_NAME//;
 	my $server_proto=$self->get_server_proto();
 	my @clients;
@@ -3460,13 +3504,15 @@ sub PrintAuditTabHead {
 
 sub print_end {
 	my ( $self,$client_id, $vars_file, $top ) = @_;
+	
+	return unless $self->{'format'} eq 'html';
+	
 	my $server_proto = $self->get_server_proto();
 	my $cgi_dir = $self->get_cgi_dir();
 	my $cgi_base_dir = $cgi_dir;
 	my $base_uri = $self->get_base_uri();
 	$cgi_base_dir =~ s/\/res//;
-	my $DOCUMENT_ROOT=$0;
-	my $SCRIPT_NAME=$ENV{'SCRIPT_NAME'};
+	my ($DOCUMENT_ROOT, $SCRIPT_NAME) = _get_script_context();
 	$DOCUMENT_ROOT =~ s/$SCRIPT_NAME//;
 	if ( ! $vars_file || $vars_file =~ /vars_update_gestioip/ ) {
 		my $lang=$self->get_lang_simple() || "en";
@@ -3895,10 +3941,9 @@ sub get_allowed_characters_descr {
 	return $allowd;
 }
 
-
 sub preparer {
 	my ($self, $datenskalar ) = @_;
-#print STDERR "TEST: $datenskalar\n";
+	debug("TEST: $datenskalar\n");
 	$datenskalar="" if ! $datenskalar;
         my ($listeneintrag, $name, $daten);
         my @datenliste;
