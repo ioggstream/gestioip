@@ -37,8 +37,7 @@ if ( $daten{'entries_per_page'} ) {
 
 my ($show_rootnet, $show_endnet, $hide_not_rooted);
 if ( defined($daten{show_rootnet}) ) {
-	$show_rootnet=0;
-	$show_rootnet= 1 if $daten{show_rootnet};
+	$show_rootnet= $daten{show_rootnet} ? 1 : 0;
 	$gip->set_show_rootnet_val("1");
 } elsif (( defined($daten{filter_button}) || defined($daten{pages_links_red_button})) && ! defined($daten{show_rootnet}) ) {
 	$show_rootnet="0";
@@ -48,8 +47,7 @@ if ( defined($daten{show_rootnet}) ) {
 }
 
 if ( defined($daten{show_endnet}) ) {
-	$show_endnet=0;
-	$show_endnet=1 if $daten{show_endnet};
+	$show_endnet=$daten{show_endnet} ? 1 : 0;
 	$gip->set_show_endnet_val("1");
 } elsif (( defined($daten{filter_button}) || defined($daten{pages_links_red_button})) && ! defined($daten{show_endnet}) ) {
 	$show_endnet="0";
@@ -59,8 +57,7 @@ if ( defined($daten{show_endnet}) ) {
 }
 
 if ( defined($daten{hide_not_rooted}) ) {
-	$hide_not_rooted=0;
-	$hide_not_rooted=1 if $daten{hide_not_rooted};
+	$hide_not_rooted=$daten{hide_not_rooted} ? 1 : 0;
 	$gip->set_hide_not_rooted_val("1");
 } elsif (( defined($daten{filter_button}) || defined($daten{pages_links_red_button})) && ! defined($daten{hide_not_rooted}) ) {
 	$hide_not_rooted="0";
